@@ -1,5 +1,6 @@
-import NavBar from '@/components/NavBar';
 import Image from 'next/image';
+
+import NavBar from '@/components/NavBar';
 
 // ----------------------------------------------------------------
 
@@ -7,7 +8,7 @@ interface IHomeProps {}
 
 const Home: React.FC<IHomeProps> = () => {
   return (
-    <div className="flex flex-col h-full border">
+    <div className="flex h-full flex-col border">
       <div className="mx-auto mt-12">
         <NavBar />
       </div>

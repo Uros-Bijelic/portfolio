@@ -1,3 +1,49 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": ["import", "tailwindcss", "react-hooks", "prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "parser": "typescript",
+        "avoidEscape": true,
+        "trailingComma": "all"
+      }
+    ],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "tailwindcss/no-custom-classname": "off",
+    // "@tanstack/query/exhaustive-deps": "error",
+    // "@tanstack/query/no-rest-destructuring": "warn",
+    // "@tanstack/query/stable-query-client": "error",
+    // IMPORTS
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "import/order": [
+      1,
+      {
+        "newlines-between": "always",
+        "groups": [
+          ["builtin"],
+          "sibling",
+          "parent",
+          "external",
+          "internal",
+          "index"
+        ]
+      }
+    ]
+  }
 }

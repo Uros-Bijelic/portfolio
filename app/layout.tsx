@@ -20,7 +20,7 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${figtree.variable} antialiased`}>
-        <main className="mx-auto max-w-screen-xl min-h-screen h-full">
+        <main className="mx-auto h-full min-h-screen max-w-screen-xl">
           {children}
         </main>
       </body>
