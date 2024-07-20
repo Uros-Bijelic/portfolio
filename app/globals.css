@@ -40,4 +40,7 @@ body {
     @apply font-figtree font-normal text-[22px] leading-[26.4px] tracking-[-2%];
   }
   /* TYPOGRPHY */
+  .nav-link {
+    @apply font-figtree text-white-300 hover:text-white-100 hover:-translate-y-1 transition-all;
+  }
 }

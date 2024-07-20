@@ -9,7 +9,7 @@ interface IHomeProps {}
 
 const Home: React.FC<IHomeProps> = () => {
   return (
-    <div className="mx-auto flex h-full flex-col ">
+    <div className="mx-auto flex h-full flex-col">
       <Vortex
         // backgroundColor="#101014"
         rangeY={400}
