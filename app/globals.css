@@ -35,9 +35,18 @@ body {
   h1 {
     @apply font-sans font-semibold text-[64px] leading-[70px] text-center;
   }
+  .h3-bold {
+    @apply font-bold text-5xl;
+  }
+  .h4-bold {
+    @apply font-figtree font-bold text-[32px] leading-[35.2px] tracking-[-0.03em];
+  }
   /* TYPOGRPHY */
   .p-medium {
     @apply font-figtree font-normal text-[22px] leading-[26.4px] tracking-[-2%];
+  }
+  .p4-medium {
+    @apply font-figtree font-normal text-[18px] leading-[26.4px] tracking-[-2%];
   }
   /* TYPOGRPHY */
   .nav-link {

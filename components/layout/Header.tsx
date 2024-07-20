@@ -12,7 +12,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="sticky left-0 top-10">
+    <header className="sticky left-0 top-10 px-4 md:px-5">
       <nav className="flex-between mx-auto max-w-screen-lg">
         <Link href="/" className="nav-link">
           <Image

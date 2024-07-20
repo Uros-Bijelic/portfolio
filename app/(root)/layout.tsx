@@ -7,9 +7,9 @@ interface ILayoutProps {
 
 const Layout: React.FC<ILayoutProps> = ({ children }) => {
   return (
-    <div className="mx-au h-full min-h-screen border">
+    <div className="mx-au h-full min-h-screen ">
       <Header />
-      <main className="mx-auto flex h-full max-w-screen-lg flex-1 pt-40">
+      <main className="mx-auto flex h-full max-w-screen-lg flex-1 px-4 py-40 md:px-5">
         {children}
       </main>
       <Footer />
