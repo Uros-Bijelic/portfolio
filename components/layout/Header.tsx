@@ -1,9 +1,10 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 // ----------------------------------------------------------------
 
@@ -12,14 +13,46 @@ interface IHeaderProps {}
 const Header = () => {
   const pathname = usePathname();
 
+  const { scrollYProgress } = useScroll();
+
+  const [visible, setVisible] = useState(true);
+
+  useMotionValueEvent(scrollYProgress, 'change', (current) => {
+    // Check if current is not undefined and is a number
+    if (typeof current === 'number') {
+      let direction = current! - scrollYProgress.getPrevious()!;
+
+      if (scrollYProgress.get() < 0.1) {
+        setVisible(true);
+      } else {
+        if (direction < 0) {
+          setVisible(true);
+        } else {
+          setVisible(false);
+        }
+      }
+    }
+  });
+
   return (
     <motion.header
-      transition={{ delay: 0.5 }}
+      // transition={{ delay: 0.5 }}
+      // initial={{
+      //   top: -100,
+      //   opacity: 0,
+      // }}
+      // animate={{ top: 40, opacity: 1 }}
       initial={{
-        top: -100,
-        opacity: 0,
+        opacity: 1,
+        y: -100,
       }}
-      animate={{ top: 40, opacity: 1 }}
+      animate={{
+        y: visible ? 0 : -100,
+        opacity: visible ? 1 : 0,
+      }}
+      transition={{
+        duration: 0.2,
+      }}
       className="sticky left-0 top-10 px-4 md:px-5"
     >
       <nav className="flex-between mx-auto max-w-screen-lg">
