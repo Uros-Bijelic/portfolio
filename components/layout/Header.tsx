@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -12,7 +13,15 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="sticky left-0 top-10 px-4 md:px-5">
+    <motion.header
+      transition={{ delay: 0.5 }}
+      initial={{
+        top: -100,
+        opacity: 0,
+      }}
+      animate={{ top: 40, opacity: 1 }}
+      className="sticky left-0 top-10 px-4 md:px-5"
+    >
       <nav className="flex-between mx-auto max-w-screen-lg">
         <Link href="/" className="nav-link">
           <Image
@@ -43,7 +52,7 @@ const Header = () => {
           </Link>
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 
