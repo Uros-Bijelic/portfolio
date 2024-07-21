@@ -1,8 +1,10 @@
 'use client';
 
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 // ----------------------------------------------------------------
 
@@ -11,8 +13,48 @@ interface IHeaderProps {}
 const Header = () => {
   const pathname = usePathname();
 
+  const { scrollYProgress } = useScroll();
+
+  const [visible, setVisible] = useState(true);
+
+  useMotionValueEvent(scrollYProgress, 'change', (current) => {
+    // Check if current is not undefined and is a number
+    if (typeof current === 'number') {
+      let direction = current! - scrollYProgress.getPrevious()!;
+
+      if (scrollYProgress.get() < 0.1) {
+        setVisible(true);
+      } else {
+        if (direction < 0) {
+          setVisible(true);
+        } else {
+          setVisible(false);
+        }
+      }
+    }
+  });
+
   return (
-    <header className="sticky left-0 top-10 px-4 md:px-5">
+    <motion.header
+      // transition={{ delay: 0.5 }}
+      // initial={{
+      //   top: -100,
+      //   opacity: 0,
+      // }}
+      // animate={{ top: 40, opacity: 1 }}
+      initial={{
+        opacity: 1,
+        y: -100,
+      }}
+      animate={{
+        y: visible ? 0 : -100,
+        opacity: visible ? 1 : 0,
+      }}
+      transition={{
+        duration: 0.2,
+      }}
+      className="sticky left-0 top-10 px-4 md:px-5"
+    >
       <nav className="flex-between mx-auto max-w-screen-lg">
         <Link href="/" className="nav-link">
           <Image
@@ -43,7 +85,7 @@ const Header = () => {
           </Link>
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 
