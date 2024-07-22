@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Spotlight } from '@/components/ui/Spotlight';
+
 // ----------------------------------------------------------------
 
 interface IProjectPageProps {}
@@ -8,6 +10,10 @@ interface IProjectPageProps {}
 const ProjectPage = () => {
   return (
     <section className="flex-between w-full  gap-10">
+      <Spotlight
+        className="-top-40 left-0 md:-top-20 md:left-60"
+        fill="white"
+      />
       <div className="flex shrink-0 flex-col items-baseline self-start">
         <h3 className="h3-bold mb-4">My Work</h3>
         <p className="p-medium">Purposeful Digital Solutions</p>
@@ -18,11 +24,6 @@ const ProjectPage = () => {
             src="/assets/images/gitnote-big.svg"
             width={680}
             height={380}
-            // height={380}
-            // style={{
-            //   maxWidth: '100%',
-            //   height: 'auto',
-            // }}
             alt="GitNote Desktop"
             className="shrink-0"
           />
