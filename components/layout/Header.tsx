@@ -53,7 +53,7 @@ const Header = () => {
       transition={{
         duration: 0.2,
       }}
-      className="sticky left-0 top-10 px-4 md:px-5"
+      className="sticky left-0 top-10 z-50 px-4 md:px-5"
     >
       <nav className="flex-between mx-auto max-w-screen-lg">
         <Link href="/" className="nav-link">
