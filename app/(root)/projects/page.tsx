@@ -10,7 +10,7 @@ interface IProjectPageProps {}
 
 const ProjectPage = () => {
   return (
-    <section className="flex-between w-full  gap-10">
+    <section className="flex-between mx-auto flex size-full max-w-screen-lg flex-1 gap-10 px-4 py-40 md:px-5">
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
