@@ -6,9 +6,8 @@ interface ILayoutProps {
 
 const Layout: React.FC<ILayoutProps> = ({ children }) => {
   return (
-    <div className="mx-auyo h-full min-h-screen">
-      <Header />
-      {/* <FloatingNav navItems={navItems} /> */}
+    <div className="mx-auto h-auto min-h-screen">
+      <Header isAlwaysVisible />
       <main className="">{children}</main>
     </div>
   );
