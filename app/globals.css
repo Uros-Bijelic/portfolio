@@ -52,4 +52,33 @@ body {
   .nav-link {
     @apply font-figtree text-white-300 hover:text-white-100 hover:-translate-y-1 transition-all;
   }
+
+  .group-btn {
+    position: relative;
+    z-index: 1;
+  }
+
+  .group-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, var(--blue-500), transparent 80%);
+    transition:
+      width 0.3s ease,
+      height 0.3s ease,
+      top 0.3s ease,
+      left 0.3s ease;
+    z-index: -1;
+  }
+
+  .group-btn:hover::after {
+    width: 200%;
+    height: 200%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
