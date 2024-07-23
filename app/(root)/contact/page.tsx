@@ -25,7 +25,6 @@ const ContactPage = () => {
       name: '',
       email: '',
       description: '',
-      contact: '',
     },
   });
 
@@ -35,8 +34,8 @@ const ContactPage = () => {
   };
 
   return (
-    <section className="flex h-screen w-full flex-col items-center justify-center overflow-y-hidden rounded-md bg-black-800 px-4 antialiased md:px-5">
-      <div className="md:flex-between z-20 mx-auto flex w-full max-w-2xl flex-col rounded-none bg-[#151E2C] p-4 md:flex-row md:gap-9 md:rounded-2xl">
+    <section className="flex h-screen w-full flex-col items-center justify-center rounded-md bg-black-800 px-4 antialiased md:px-5">
+      <div className="md:flex-between z-20 mx-auto flex w-full max-w-2xl flex-col overflow-auto rounded-2xl  bg-[#151E2C] p-4 max-md:mt-20 max-md:max-h-[80vh] md:flex-row md:gap-9">
         <Form {...form}>
           <form className="flex flex-1 flex-col" onSubmit={handleSubmit}>
             <div className="mb-4 flex flex-col gap-4">
@@ -46,13 +45,9 @@ const ContactPage = () => {
                 name="description"
                 label="Write something about your project goals and timeframe"
               />
-              <RHFInput
-                name="contact"
-                label="How to reach out to you back? eg. phone number or email "
-              />
             </div>
             <button
-              className="group/btn from-black text-white relative block h-10 w-full rounded-md bg-gradient-to-br to-neutral-600 font-medium shadow-[0px_1px_0px_0px_#5EAFFF40_inset,0px_-1px_0px_0px_#5EAFFF40_inset]  hover:border hover:border-[#5EAFFF]"
+              className="group/btn from-black text-white relative block h-10 w-full rounded-md bg-gradient-to-br to-neutral-600 font-medium shadow-[0px_1px_0px_0px_#5EAFFF40_inset,0px_-1px_0px_0px_#5EAFFF40_inset] hover:border hover:border-blue-500"
               type="submit"
             >
               Sign up &rarr;

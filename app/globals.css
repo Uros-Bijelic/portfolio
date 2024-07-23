@@ -22,6 +22,23 @@ body {
   @apply bg-black-800 text-white-300;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  display: none;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-track-piece {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #5eafff;
+  border-radius: 40px;
+}
+
 @layer utilities {
   /* FLEX */
   .flex-between {
