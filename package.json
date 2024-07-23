@@ -10,17 +10,26 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@react-email/components": "^0.0.21",
+    "@tabler/icons-react": "^3.11.0",
     "clsx": "^2.1.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-tailwindcss": "^3.17.4",
-    "framer-motion": "^11.2.14",
+    "framer-motion": "^11.3.8",
     "next": "14.2.4",
     "prettier": "^3.3.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.52.1",
+    "react-toastify": "^10.0.5",
+    "resend": "^3.5.0",
     "simplex-noise": "^4.0.1",
-    "tailwind-merge": "^2.4.0"
+    "tailwind-merge": "^2.4.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",

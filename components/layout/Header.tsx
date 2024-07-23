@@ -8,9 +8,11 @@ import { useState } from 'react';
 
 // ----------------------------------------------------------------
 
-interface IHeaderProps {}
+interface IHeaderProps {
+  isAlwaysVisible?: boolean;
+}
 
-const Header = () => {
+const Header: React.FC<IHeaderProps> = ({ isAlwaysVisible = false }) => {
   const pathname = usePathname();
 
   const { scrollYProgress } = useScroll();
@@ -24,7 +26,7 @@ const Header = () => {
 
       if (scrollYProgress.get() < 0.1) {
         setVisible(true);
-      } else {
+      } else if (!isAlwaysVisible) {
         if (direction < 0) {
           setVisible(true);
         } else {
@@ -36,24 +38,18 @@ const Header = () => {
 
   return (
     <motion.header
-      // transition={{ delay: 0.5 }}
-      // initial={{
-      //   top: -100,
-      //   opacity: 0,
-      // }}
-      // animate={{ top: 40, opacity: 1 }}
       initial={{
         opacity: 1,
         y: -100,
       }}
       animate={{
-        y: visible ? 0 : -100,
+        y: visible ? 40 : -100,
         opacity: visible ? 1 : 0,
       }}
       transition={{
         duration: 0.2,
       }}
-      className="sticky left-0 top-10 z-50 px-4 md:px-5"
+      className="fixed  z-50 w-full px-4 md:px-5"
     >
       <nav className="flex-between mx-auto max-w-screen-lg">
         <Link href="/" className="nav-link">
@@ -72,7 +68,7 @@ const Header = () => {
             Home
           </Link>
           <Link
-            href="/projects "
+            href="/projects"
             className={`nav-link ${pathname.includes('/projects') ? 'text-white-100' : ''}`}
           >
             Work

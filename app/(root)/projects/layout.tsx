@@ -22,12 +22,10 @@ const navItems = [
 
 const Layout: React.FC<ILayoutProps> = ({ children }) => {
   return (
-    <div className="mx-au h-full min-h-screen ">
+    <div className="mx-auyo h-full min-h-screen">
       <Header />
       {/* <FloatingNav navItems={navItems} /> */}
-      <main className="mx-auto flex h-full max-w-screen-lg flex-1 px-4 py-40 md:px-5">
-        {children}
-      </main>
+      <main className="">{children}</main>
       <Footer />
     </div>
   );
