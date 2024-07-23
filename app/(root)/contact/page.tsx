@@ -4,40 +4,54 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 import RHFInput from '@/components/RHFInputs/RHFInput';
 import RHFTextarea from '@/components/RHFInputs/RHFTextarea';
 import { BackgroundBeams } from '@/components/ui/BacgroundBeams';
 import { Form } from '@/components/ui/form';
+import { sendEmail } from '@/lib/actions/send-mail';
 import { cn } from '@/lib/utils';
-import { getInTouchFormSchema } from '@/lib/validation';
-
-// https://mydevpa.ge/blog/how-to-send-emails-using-next-14-resend-and-react-email
+import {
+  getInTouchFormSchema,
+  type IGetInTouchFormSchema,
+} from '@/lib/validation';
 
 // ----------------------------------------------------------------
 
-interface IContactPageProps {}
-
 const ContactPage = () => {
-  const form = useForm({
+  const form = useForm<IGetInTouchFormSchema>({
     resolver: zodResolver(getInTouchFormSchema),
     defaultValues: {
       name: '',
       email: '',
       description: '',
+      contact: '',
     },
   });
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log('Form submitted');
+  const onSubmit = async (data: IGetInTouchFormSchema) => {
+    console.log('DATA u portfolio form', data);
+
+    const response = await sendEmail(data);
+
+    if (response?.status === 200) {
+      toast.success(response.message);
+      console.log(response, 'dobra');
+    } else {
+      console.log(response, 'lose');
+      toast.error(response!.message);
+    }
   };
 
   return (
-    <section className="flex h-screen w-full flex-col items-center justify-center rounded-md bg-black-800 px-4 antialiased md:px-5">
-      <div className="md:flex-between z-20 mx-auto flex w-full max-w-2xl flex-col overflow-auto rounded-2xl  bg-[#151E2C] p-4 max-md:mt-20 max-md:max-h-[80vh] md:flex-row md:gap-9">
+    <section className="flex h-screen w-full flex-col items-center justify-center rounded-md  px-4 antialiased md:px-5">
+      <div className="md:flex-between z-20 mx-auto mt-20 flex w-full max-w-2xl flex-col overflow-auto rounded-2xl bg-[#151E2C] p-4 max-md:max-h-[80vh] md:flex-row md:gap-9">
         <Form {...form}>
-          <form className="flex flex-1 flex-col" onSubmit={handleSubmit}>
+          <form
+            className="flex flex-1 flex-col"
+            onSubmit={form.handleSubmit(onSubmit)}
+          >
             <div className="mb-4 flex flex-col gap-4">
               <RHFInput name="name" label="What is your name?" />
               <RHFInput name="email" label="What is your email?" />
@@ -45,9 +59,13 @@ const ContactPage = () => {
                 name="description"
                 label="Write something about your project goals and timeframe"
               />
+              <RHFInput
+                name="contact"
+                label="How to reach out to you back? eg. phone number or email?"
+              />
             </div>
             <button
-              className="group/btn from-black text-white relative block h-10 w-full rounded-md bg-gradient-to-br to-neutral-600 font-medium shadow-[0px_1px_0px_0px_#5EAFFF40_inset,0px_-1px_0px_0px_#5EAFFF40_inset] hover:border hover:border-blue-500"
+              className="from-black text-white relative block h-10 w-full rounded-md bg-gradient-to-br to-neutral-600 font-medium shadow-[0px_1px_0px_0px_#5EAFFF40_inset,0px_-1px_0px_0px_#5EAFFF40_inset] hover:border hover:border-blue-500"
               type="submit"
             >
               Sign up &rarr;

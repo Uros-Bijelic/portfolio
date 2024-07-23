@@ -7,6 +7,7 @@ export const getInTouchFormSchema = z.object({
     .string()
     .trim()
     .min(10, 'Description must be at least 10 characters long!'),
+  contact: z.string().trim().min(3, 'Must be at least 3 characters long'),
 });
 
 export type IGetInTouchFormSchema = z.infer<typeof getInTouchFormSchema>;

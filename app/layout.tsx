@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 import { Figtree, Inter } from 'next/font/google';
+import { ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 import './globals.css';
 
 // ----------------------------------------------------------------
@@ -20,6 +23,7 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${figtree.variable} antialiased`}>
+        <ToastContainer autoClose={20000} />
         <main className="mx-auto h-full min-h-screen">{children}</main>
       </body>
     </html>
