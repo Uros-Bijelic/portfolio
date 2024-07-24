@@ -19,6 +19,7 @@
 body {
   height: 100%;
   min-height: 100vh;
+  font-family: 'figtree';
   @apply bg-black-800 text-white-300;
 }
 
@@ -73,8 +74,8 @@ input:-webkit-autofill:active {
   }
   /* FLEX */
 
-  h1 {
-    @apply font-sans font-semibold text-[64px] leading-[70px] text-center;
+  .h1-semi {
+    @apply font-semibold text-[64px] leading-[70px] text-center;
   }
   .h3-bold {
     @apply font-bold text-5xl;

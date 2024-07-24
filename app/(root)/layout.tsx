@@ -1,4 +1,4 @@
-import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 interface ILayoutProps {
   children: React.ReactNode;
@@ -6,9 +6,9 @@ interface ILayoutProps {
 
 const Layout: React.FC<ILayoutProps> = ({ children }) => {
   return (
-    <div className="mx-auto h-auto min-h-screen">
-      <Header isAlwaysVisible />
+    <div className="mx-auto h-full min-h-screen">
       <main className="">{children}</main>
+      <Footer />
     </div>
   );
 };
