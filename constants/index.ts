@@ -1,0 +1,17 @@
+export const TECH_STACK_ICONS = [
+  // 'aws',
+  'css',
+  'html',
+  'materialui',
+  'mongodb',
+  'mysql',
+  'next',
+  'node',
+  'postgresql',
+  'prisma',
+  'react',
+  'redux',
+  'scss',
+  'tailwind',
+  'typescript',
+];

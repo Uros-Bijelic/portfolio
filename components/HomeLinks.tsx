@@ -9,13 +9,13 @@ import Link from 'next/link';
 const HomeLinks = () => {
   return (
     <motion.div
-      // initial={{
-      //   opacity: 0,
-      // }}
-      // animate={{
-      //   opacity: 1,
-      // }}
-      // transition={{ delay: 4.4 }}
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      transition={{ delay: 4.4 }}
       className="flex flex-wrap justify-center gap-5"
     >
       <Link

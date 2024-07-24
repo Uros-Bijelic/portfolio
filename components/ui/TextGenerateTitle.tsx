@@ -55,9 +55,9 @@ export const TextGenerateTitle = ({
   return (
     <div className={cn('font-bold', className)}>
       <div className="mt-4">
-        <div className="dark:text-white text-black text-center text-2xl font-bold leading-snug tracking-wide text-white-100 md:text-6xl">
+        <h1 className="text-black text-center text-3xl font-bold leading-snug tracking-wide text-white-100 dark:text-white-100 md:text-6xl">
           {renderWords()}
-        </div>
+        </h1>
       </div>
     </div>
   );
