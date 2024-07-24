@@ -4,6 +4,8 @@ import React from 'react';
 
 import { cn } from '@/lib/utils';
 
+// ----------------------------------------------------------------
+
 export const BackgroundBeams = React.memo(
   ({ className }: { className?: string }) => {
     const paths = [
