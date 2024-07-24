@@ -11,13 +11,13 @@ interface IProjectPageProps {}
 
 const ProjectPage = () => {
   return (
-    <section className="mx-auto flex size-full max-w-screen-lg flex-1 flex-col gap-10 px-4 py-40 md:px-5">
+    <section className="mx-auto flex size-full max-w-screen-lg flex-1 flex-col px-4 py-40 md:px-5">
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
       />
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-16">
         <div className="flex shrink-0 flex-col items-baseline self-start">
           <h3 className="h3-bold mb-4">My Work</h3>
           <p className="p-medium">Purposeful Digital Solutions</p>
