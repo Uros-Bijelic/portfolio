@@ -1,6 +1,7 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
@@ -46,7 +47,17 @@ const ContactPage = () => {
 
   return (
     <section className="flex h-screen w-full flex-col items-center justify-center rounded-md px-4 antialiased">
-      <div className="md:flex-between z-20 mx-auto mt-20 flex w-full max-w-2xl flex-col overflow-auto rounded-2xl bg-[#151E2C] p-4 max-md:max-h-[80vh] md:flex-row md:gap-9">
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: -100,
+        }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.5,
+        }}
+        className="md:flex-between z-20 mx-auto mt-20 flex w-full max-w-2xl flex-col overflow-auto rounded-2xl bg-[#151E2C] p-4 max-md:max-h-[80vh] md:flex-row md:gap-9"
+      >
         <Form {...form}>
           <form
             className="flex flex-1 flex-col"
@@ -124,7 +135,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <BackgroundBeams />
     </section>
   );
