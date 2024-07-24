@@ -1,4 +1,5 @@
 import HomeLinks from '@/components/HomeLinks';
+import Header from '@/components/layout/Header';
 import { TextGenerateSubtitle } from '@/components/ui/TextGenerateSubtitle';
 import { TextGenerateTitle } from '@/components/ui/TextGenerateTitle';
 import { Vortex } from '@/components/ui/Vortex';
@@ -10,7 +11,7 @@ interface IHomeProps {}
 const Home: React.FC<IHomeProps> = () => {
   return (
     <div className="mx-auto flex h-full flex-col">
-      {/* <Header isAlwaysVisible /> */}
+      <Header isAlwaysVisible />
       <Vortex
         // backgroundColor="#101014"
         rangeY={400}
@@ -22,12 +23,12 @@ const Home: React.FC<IHomeProps> = () => {
           <section className="flex-center h-screen flex-col ">
             <TextGenerateTitle
               words="Hi! I'm Uroš, a Next.js Developer based in Serbia."
-              duration={0.3}
+              duration={0.2}
             />
             <TextGenerateSubtitle
               words="Web developer creating top-notch digital experiences with passion
               and precision"
-              duration={0.3}
+              duration={0.2}
             />
             <div className="my-4" />
             <HomeLinks />
