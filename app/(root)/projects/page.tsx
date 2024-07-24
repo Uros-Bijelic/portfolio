@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { CardBody, CardContainer, CardItem } from '@/components/ui/3DCard';
 import { Spotlight } from '@/components/ui/Spotlight';
 import { WobbleCard } from '@/components/ui/WobbleCard';
 import { TECH_STACK_ICONS } from '@/constants';
@@ -40,8 +41,8 @@ const ProjectPage = () => {
           <p className="p-medium">Purposeful Digital Solutions</p>
         </div>
         <div className="flex flex-col gap-16">
-          <Link href="/projects/github-note" className="">
-            <WobbleCard
+          {/* <Link href="/projects/github-note" className=""> */}
+          {/* <WobbleCard
               containerClassName="col-span-1 lg:col-span-2 h-full min-h-[500px] lg:min-h-[300px] cursor-pointer bg-indigo-800"
               className="flex flex-col gap-6"
             >
@@ -61,8 +62,40 @@ const ProjectPage = () => {
                   to keep track of their career progress
                 </p>
               </div>
-            </WobbleCard>
+            </WobbleCard> */}
+          <Link href="/projects/github-note">
+            <CardContainer className="inter-var">
+              <CardBody className="group/card bg-black border-white/[0.2] relative size-auto rounded-xl border p-6 hover:shadow-2xl hover:shadow-emerald-500/[0.1]   ">
+                <CardItem translateZ="100" className="my-4 w-full">
+                  <Image
+                    src="/assets/images/gitnote-big.svg"
+                    width={900}
+                    height={380}
+                    alt="GitNote Desktop"
+                    className="shrink-0"
+                  />
+                </CardItem>
+                <CardItem translateZ="50" className="h4-bold mb-4">
+                  Git Note - Professional note tracking app
+                </CardItem>
+                <CardItem as="p" translateZ="60" className="p4-medium">
+                  Git Note is professional note tracking app made for develpers
+                  to keep track of their career progress
+                </CardItem>
+                {/* <div className="mt-20 flex items-center justify-between">
+                <CardItem
+                  translateZ={20}
+                  as={Link}
+                  href="/projects/github-note"
+                  className="rounded-xl px-4 py-2 text-xs font-normal text-white-100"
+                >
+                  Try now →
+                </CardItem>
+              </div> */}
+              </CardBody>
+            </CardContainer>
           </Link>
+          {/* </Link> */}
           <Link href="/projects/dev-today" className="flex flex-col gap-6">
             <WobbleCard
               containerClassName="col-span-1 lg:col-span-2 h-full min-h-[500px] lg:min-h-[300px] cursor-pointer bg-[#005f73]"
