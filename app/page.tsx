@@ -10,6 +10,7 @@ interface IHomeProps {}
 const Home: React.FC<IHomeProps> = () => {
   return (
     <div className="mx-auto flex h-full flex-col">
+      {/* <Header isAlwaysVisible /> */}
       <Vortex
         // backgroundColor="#101014"
         rangeY={400}
@@ -19,10 +20,14 @@ const Home: React.FC<IHomeProps> = () => {
       >
         <div className="max-w-screen-lg">
           <section className="flex-center h-screen flex-col ">
-            <TextGenerateTitle words="Hi! I'm Uroš, a Next.js Developer based in Serbia." />
+            <TextGenerateTitle
+              words="Hi! I'm Uroš, a Next.js Developer based in Serbia."
+              duration={0.3}
+            />
             <TextGenerateSubtitle
               words="Web developer creating top-notch digital experiences with passion
               and precision"
+              duration={0.3}
             />
             <div className="my-4" />
             <HomeLinks />

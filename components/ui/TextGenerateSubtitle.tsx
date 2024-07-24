@@ -34,7 +34,7 @@ export const TextGenerateSubtitle = ({
           // delay: 4,
         },
       );
-    }, 2000);
+    }, 1800);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scope.current]);
 

@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 
 // ----------------------------------------------------------------
@@ -15,7 +14,7 @@ const HomeLinks = () => {
       animate={{
         opacity: 1,
       }}
-      transition={{ delay: 4.4 }}
+      transition={{ delay: 4 }}
       className="flex flex-wrap justify-center gap-5"
     >
       <Link
@@ -23,7 +22,7 @@ const HomeLinks = () => {
         className="relative min-w-[128px] p-[3px] text-center transition-transform hover:-translate-y-1"
       >
         <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500" />
-        <div className="bg-black text-white group relative rounded-[6px] bg-[#000000] px-4 py-2 uppercase transition hover:bg-transparent max-md:text-sm md:px-8">
+        <div className="group relative rounded-[6px] bg-[#000000] bg-gradient-to-r from-indigo-500 to-purple-500 px-4 py-2 uppercase text-[#000000] transition hover:bg-transparent max-md:text-sm md:px-8">
           Projects
         </div>
       </Link>
@@ -36,7 +35,7 @@ const HomeLinks = () => {
           Contact Me
         </div>
       </Link>
-      <a
+      {/* <a
         href="/assets/resume.pdf"
         className="relative min-w-[128px] p-[3px] text-center transition-transform hover:-translate-y-1"
         download
@@ -51,7 +50,7 @@ const HomeLinks = () => {
           />
           Resume
         </div>
-      </a>
+      </a> */}
     </motion.div>
   );
 };
