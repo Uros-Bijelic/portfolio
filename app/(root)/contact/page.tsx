@@ -56,7 +56,7 @@ const ContactPage = () => {
         transition={{
           duration: 0.5,
         }}
-        className="md:flex-between z-20 mx-auto mt-20 flex w-full max-w-2xl flex-col overflow-auto rounded-2xl bg-[#151E2C] p-4 max-md:max-h-[80vh] md:flex-row md:gap-9"
+        className="md:flex-between z-20 mx-auto mt-20 flex w-full max-w-4xl flex-col overflow-auto rounded-2xl bg-[#151E2C] p-8 max-md:max-h-[80vh] md:flex-row md:gap-9"
       >
         <Form {...form}>
           <form
@@ -76,10 +76,10 @@ const ContactPage = () => {
               />
             </div>
             <button
-              className="from-black text-white relative block h-10 w-full rounded-md bg-gradient-to-br to-neutral-600 font-medium shadow-[0px_1px_0px_0px_#5EAFFF40_inset,0px_-1px_0px_0px_#5EAFFF40_inset] hover:border hover:border-blue-500"
+              className="from-black text-white relative block h-10 w-full rounded-md bg-blue-500 bg-gradient-to-br to-neutral-600 font-bold text-black-100 shadow-[0px_1px_0px_0px_#5EAFFF40_inset,0px_-1px_0px_0px_#5EAFFF40_inset] hover:border hover:border-blue-500"
               type="submit"
             >
-              Sign up &rarr;
+              Submit
             </button>
 
             <div className="my-8 h-px w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent dark:via-neutral-700 md:hidden" />
