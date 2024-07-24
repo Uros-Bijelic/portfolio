@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 
 import { cn } from '@/lib/utils';
 
+// ----------------------------------------------------------------
+
 export const WobbleCard = ({
   children,
   containerClassName,

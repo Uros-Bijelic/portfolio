@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 
 import { cn } from '@/lib/utils';
 
+// ----------------------------------------------------------------
+
 export const TextGenerateTitle = ({
   words,
   className,

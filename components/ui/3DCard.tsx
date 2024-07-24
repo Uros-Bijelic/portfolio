@@ -10,6 +10,8 @@ import React, {
 
 import { cn } from '@/lib/utils';
 
+// ----------------------------------------------------------------
+
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
 >(undefined);
