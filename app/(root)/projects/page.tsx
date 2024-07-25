@@ -11,7 +11,7 @@ interface IProjectPageProps {}
 
 const ProjectPage = () => {
   return (
-    <section className="mx-auto flex size-full max-w-screen-lg flex-1 flex-col px-4 py-40 md:px-5">
+    <section className="page-wrapper">
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
@@ -23,7 +23,7 @@ const ProjectPage = () => {
           <p className="p-medium">Purposeful Digital Solutions</p>
         </div>
         <div className="grid grid-cols-2 gap-10 max-sm:grid-cols-1">
-          <Link href="/projects/github-note">
+          <Link href="/projects/gitnote">
             <CardContainer>
               <CardBody className="group/card border-white/[0.2] relative size-auto rounded-xl border p-6 hover:shadow-2xl hover:shadow-emerald-500/[0.1]">
                 <CardItem translateZ="100" className="my-4 w-full">

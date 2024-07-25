@@ -15,3 +15,21 @@ export const TECH_STACK_ICONS = [
   'tailwind',
   'typescript',
 ];
+
+export const GIT_NOTE_ICONS = [
+  // 'aws',
+  'css',
+  'html',
+  // 'materialui',
+  'mongodb',
+  // 'mysql',
+  'next',
+  'node',
+  // 'postgresql',
+  'prisma',
+  'react',
+  // 'redux',
+  // 'scss',
+  'tailwind',
+  'typescript',
+];
