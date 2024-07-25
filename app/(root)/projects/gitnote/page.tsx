@@ -111,7 +111,7 @@ const GitnotePage = () => {
                 <h4 className="h4-bold">Final Site</h4>
                 <div>
                   <Link
-                    href="https://github-note.vercel.app/"
+                    href="https://github-note.vercel.app"
                     className="flex gap-2"
                   >
                     github-note.vercel.app
@@ -125,13 +125,16 @@ const GitnotePage = () => {
                 </div>
               </div>
               <div className="flex-center h-[532px] rounded-xl bg-[#1D1F25B2]">
-                <Image
-                  src="/assets/images/git-note-desk-mob.svg"
-                  alt="Gitnote Desktop"
-                  width={742}
-                  height={350}
-                  className="object-contain"
-                />
+                <div className="flex-center relative mt-4 w-full flex-1 rounded-lg">
+                  <Image
+                    src="/assets/images/git-note-desk-mob.svg"
+                    alt="Gitnote Desktop"
+                    width={742}
+                    height={350}
+                    // fill
+                    priority
+                  />
+                </div>
               </div>
             </motion.div>
             <motion.div
