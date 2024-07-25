@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Figtree } from 'next/font/google';
 import { ToastContainer } from 'react-toastify';
 
-import Header from '@/components/layout/Header';
 import 'react-toastify/dist/ReactToastify.css';
 import './globals.css';
 
@@ -24,7 +23,6 @@ const RootLayout = ({
     <html lang="en">
       <body className={`${figtree.variable} antialiased`}>
         <ToastContainer autoClose={20000} />
-        <Header />
         <main className="mx-auto h-full min-h-screen">{children}</main>
       </body>
     </html>

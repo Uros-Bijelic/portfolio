@@ -9,6 +9,8 @@ import {
   Text,
 } from '@react-email/components';
 
+// ----------------------------------------------------------------
+
 interface IEmailSender {
   name?: string;
   email?: string;

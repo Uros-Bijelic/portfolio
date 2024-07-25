@@ -7,8 +7,6 @@ import { TECH_STACK_ICONS } from '@/constants';
 
 // ----------------------------------------------------------------
 
-interface IProjectPageProps {}
-
 const ProjectPage = () => {
   return (
     <section className="page-wrapper">
