@@ -105,37 +105,37 @@ const GitnotePage = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="flex flex-col gap-3.5"
             >
-              <div>
-                <h4 className="h4-bold">Final Site</h4>
+              <Link
+                href="https://github-note.vercel.app"
+                className="flex flex-col gap-3.5"
+                target="_blank"
+              >
                 <div>
-                  <Link
-                    href="https://github-note.vercel.app"
-                    className="flex gap-2"
-                  >
-                    github-note.vercel.app
+                  <h4 className="h4-bold">Final Site</h4>
+                  <div>
+                    <div className="flex gap-2">
+                      github-note.vercel.app
+                      <Image
+                        src="/assets/icons/link-arrow.svg"
+                        width={20}
+                        height={20}
+                        alt="Arrow"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="flex-center h-[532px] rounded-xl bg-[#1D1F25B2]">
+                  <div className="flex-center relative mt-4 w-full flex-1 rounded-lg">
                     <Image
-                      src="/assets/icons/link-arrow.svg"
-                      width={20}
-                      height={20}
-                      alt="Arrow"
+                      src="/assets/images/git-note-desk-mob.svg"
+                      alt="Gitnote Desktop"
+                      width={742}
+                      height={350}
                     />
-                  </Link>
+                  </div>
                 </div>
-              </div>
-              <div className="flex-center h-[532px] rounded-xl bg-[#1D1F25B2]">
-                <div className="flex-center relative mt-4 w-full flex-1 rounded-lg">
-                  <Image
-                    src="/assets/images/git-note-desk-mob.svg"
-                    alt="Gitnote Desktop"
-                    width={742}
-                    height={350}
-                    // fill
-                    priority
-                  />
-                </div>
-              </div>
+              </Link>
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
@@ -147,24 +147,25 @@ const GitnotePage = () => {
               <ul className="flex flex-col gap-6">
                 <li className="p-medium">
                   1. Frontend Development: Mastering Next.js and Tailwind CSS
-                  for building responsive and performant web applications.
+                  with Shadcn for building responsive and performant web
+                  applications.
                 </li>
                 <li className="p-medium">
-                  2. Backend Integration: Implementing server-side searching and
-                  pagination for optimizing user experience.
+                  2. Backend Integration: Implementing server-side searching
+                  with filtering and pagination for optimizing user experience.
                 </li>
                 <li className="p-medium">
                   3. UX Design: Designing intuitive interfaces and seamless
-                  workflows to enhance user adoption and satisfaction.
+                  workflows to enhance user experience
                 </li>
                 <li className="p-medium">
-                  4. Form Handling: Utilizing the useForm hook for efficient
-                  form management, ensuring smooth data handling and validation
-                  processes.
+                  4. Form Handling: Utilizing the React Hook Form library with
+                  Zod for efficient form management, ensuring smooth data
+                  handling and validation processes.
                 </li>
                 <li className="p-medium">
-                  5. NextAuth for authentication to optimize user experience and
-                  enhance security.
+                  5. Implementing Next-Auth for authentication and enhanced user
+                  security
                 </li>
               </ul>
             </motion.div>
@@ -177,9 +178,10 @@ const GitnotePage = () => {
               <h4 className="h4-bold">Challenges</h4>
               <ul className="flex flex-col gap-6">
                 <li className="p-medium">
-                  1. Establish MongoDB database integration, structuring data
-                  storage for knowledge, code snippets, and workflow management
-                  and connecting to Next Auth
+                  1. Establish MongoDB database integration within Next.js Node
+                  and Edge Runtimes, structuring data storage for knowledge,
+                  code snippets, and workflow management and connecting to Next
+                  Auth
                 </li>
                 <li className="p-medium">
                   2. Implement secure user authentication mechanisms to manage
