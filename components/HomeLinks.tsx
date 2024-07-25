@@ -35,22 +35,6 @@ const HomeLinks = () => {
           Contact Me
         </div>
       </Link>
-      {/* <a
-        href="/assets/resume.pdf"
-        className="relative min-w-[128px] p-[3px] text-center transition-transform hover:-translate-y-1"
-        download
-      >
-        <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500" />
-        <div className="bg-black text-white group relative flex gap-2 rounded-[6px] bg-[#000000] px-4 py-2 uppercase transition hover:bg-transparent max-md:text-sm ">
-          <Image
-            width={20}
-            height={20}
-            alt="resume"
-            src="/assets/icons/download-icn.svg"
-          />
-          Resume
-        </div>
-      </a> */}
     </motion.div>
   );
 };

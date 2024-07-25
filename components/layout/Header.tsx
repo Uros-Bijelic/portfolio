@@ -49,7 +49,7 @@ const Header: React.FC<IHeaderProps> = ({ isAlwaysVisible = false }) => {
       transition={{
         duration: 0.2,
       }}
-      className="fixed  z-[5000] w-full px-4 md:px-5"
+      className="fixed z-[5001] w-full px-4 md:px-5"
     >
       <nav className="flex-between mx-auto max-w-screen-lg">
         <Link href="/" className="nav-link">
@@ -81,10 +81,16 @@ const Header: React.FC<IHeaderProps> = ({ isAlwaysVisible = false }) => {
           </Link>
           <Link
             href="/assets/resume.pdf"
-            className={`nav-link ${pathname === '/contact' ? 'text-white-100' : ''}`}
+            className={`nav-link flex-center gap-2 ${pathname === '/contact' ? 'text-white-100' : ''}`}
             download
             target="_blank"
           >
+            <Image
+              src="/assets/icons/download.svg"
+              width={18}
+              height={18}
+              alt="Download"
+            />
             Resume
           </Link>
         </div>

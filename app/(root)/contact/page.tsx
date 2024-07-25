@@ -12,7 +12,6 @@ import RHFTextarea from '@/components/RHFInputs/RHFTextarea';
 import { BackgroundBeams } from '@/components/ui/BacgroundBeams';
 import { Form } from '@/components/ui/form';
 import { sendEmail } from '@/lib/actions/send-mail';
-import { cn } from '@/lib/utils';
 import {
   getInTouchFormSchema,
   type IGetInTouchFormSchema,
@@ -32,8 +31,6 @@ const ContactPage = () => {
   });
 
   const onSubmit = async (data: IGetInTouchFormSchema) => {
-    console.log('DATA u portfolio form', data);
-
     const response = await sendEmail(data);
 
     if (response?.status === 200) {
@@ -138,20 +135,6 @@ const ContactPage = () => {
       </motion.div>
       <BackgroundBeams />
     </section>
-  );
-};
-
-const LabelInputContainer = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
-  return (
-    <div className={cn('flex flex-col space-y-2 w-full', className)}>
-      {children}
-    </div>
   );
 };
 
