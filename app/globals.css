@@ -74,6 +74,10 @@ input:-webkit-autofill:active {
   }
   /* FLEX */
 
+  .page-wrapper {
+    @apply mx-auto flex size-full max-w-screen-lg flex-1 flex-col px-4 py-40;
+  }
+
   .h1-semi {
     @apply font-semibold text-[64px] leading-[70px] text-center;
   }
