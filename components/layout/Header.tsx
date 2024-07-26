@@ -49,18 +49,21 @@ const Header: React.FC<IHeaderProps> = ({ isAlwaysVisible = false }) => {
       transition={{
         duration: 0.2,
       }}
-      className="fixed z-[5001] w-full px-4 md:px-5"
+      className="fixed z-[5001] w-full px-4 max-sm:hidden md:px-5"
     >
       <nav className="flex-between mx-auto max-w-screen-lg">
         <Link href="/" className="nav-link">
-          <Image
-            src="/assets/images/Logo.svg"
-            width={40}
-            height={40}
-            alt="Logo"
-          />
+          <div className="relative">
+            <Image
+              src="/assets/images/Logo.svg"
+              width={40}
+              height={40}
+              sizes="(max-width: 768px) 24px, (max-width: 1200px) 50vw, 33vw"
+              alt="Logo"
+            />
+          </div>
         </Link>
-        <div className="flex gap-10">
+        <div className="flex gap-5 md:gap-10">
           <Link
             href="/"
             className={`nav-link ${pathname === '/' ? 'text-white-100' : ''}`}
@@ -85,12 +88,6 @@ const Header: React.FC<IHeaderProps> = ({ isAlwaysVisible = false }) => {
             download
             target="_blank"
           >
-            <Image
-              src="/assets/icons/download.svg"
-              width={18}
-              height={18}
-              alt="Download"
-            />
             Resume
           </Link>
         </div>
