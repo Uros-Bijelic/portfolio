@@ -21,7 +21,7 @@ export const sendEmail = async (senderData: IGetInTouchFormSchema) => {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: `${senderData.name} <${senderData.email}>`,
+      from: `${senderData.name} <onboarding@resend.dev>`,
       to: ['urosbijelic90@gmail.com'],
       subject: 'Portfolio email',
       react: EmailTemplate({
