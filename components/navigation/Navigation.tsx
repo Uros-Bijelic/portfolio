@@ -27,7 +27,7 @@ const NAV_ITEMS: {
   {
     text: 'Home',
     href: '/',
-    icon: <LogoIcon />,
+    icon: <LogoIcon className="text-white-100" />,
   },
   {
     text: 'Work',
@@ -54,7 +54,7 @@ interface INavigation {
 export const Navigation: React.FC<INavigation> = ({ toggleSidbar }) => (
   <motion.ul
     variants={variants}
-    className="width-[230px] absolute top-[100px] flex flex-col gap-5 p-[25px]"
+    className="width-[230px] text-white absolute top-[100px] flex flex-col gap-5 p-[25px]"
   >
     {NAV_ITEMS.map(({ href, icon, text, download }) => (
       <MenuItem
