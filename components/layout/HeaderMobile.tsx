@@ -3,8 +3,13 @@
 import { MenuToggle } from '../navigation/MenuToggle';
 import { Navigation } from '../navigation/Navigation';
 
-import { motion, useCycle } from 'framer-motion';
-import { useCallback, useEffect, useRef } from 'react';
+import {
+  motion,
+  useCycle,
+  useMotionValueEvent,
+  useScroll,
+} from 'framer-motion';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { useDimensions } from '@/hooks/use-dimensions';
 
@@ -30,10 +35,35 @@ const sidebar = {
   },
 };
 
-const HeaderMobile = () => {
+interface IHeaderMobileProps {
+  isAlwaysVisible?: boolean;
+}
+
+const HeaderMobile: React.FC<IHeaderMobileProps> = ({ isAlwaysVisible }) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const { height } = useDimensions(containerRef);
+
+  const { scrollYProgress } = useScroll();
+
+  const [visible, setVisible] = useState(true);
+
+  useMotionValueEvent(scrollYProgress, 'change', (current) => {
+    // Check if current is not undefined and is a number
+    if (typeof current === 'number') {
+      let direction = current! - scrollYProgress.getPrevious()!;
+
+      if (scrollYProgress.get() < 0.1) {
+        setVisible(true);
+      } else if (!isAlwaysVisible) {
+        if (direction < 0) {
+          setVisible(true);
+        } else {
+          setVisible(false);
+        }
+      }
+    }
+  });
 
   const handleClickOutside = useCallback(
     (e: MouseEvent) => {
@@ -56,20 +86,35 @@ const HeaderMobile = () => {
   }, [handleClickOutside]);
 
   return (
-    <motion.nav
-      initial={false}
-      animate={isOpen ? 'open' : 'closed'}
-      custom={height}
-      ref={containerRef}
-      className="absolute inset-y-0 left-0 z-[5000] sm:hidden"
+    <motion.div
+      initial={{
+        opacity: 1,
+        y: -100,
+      }}
+      animate={{
+        y: visible ? 0 : -100,
+        opacity: visible ? 1 : 0,
+      }}
+      transition={{
+        duration: 0.2,
+      }}
+      className="fixed z-[5001]"
     >
-      <motion.div
-        className="absolute inset-y-0 left-0 size-full h-screen w-[300px] border-r bg-black-600"
-        variants={sidebar}
-      />
-      <Navigation toggleSidbar={() => toggleOpen(0)} />
-      <MenuToggle toggle={() => toggleOpen()} />
-    </motion.nav>
+      <motion.nav
+        initial={false}
+        animate={isOpen ? 'open' : 'closed'}
+        custom={height}
+        ref={containerRef}
+        className="fixed inset-y-0 left-0 z-[5000] sm:hidden"
+      >
+        <motion.div
+          className="fixed inset-y-0 left-0 size-full h-screen w-[300px] border-r bg-black-600"
+          variants={sidebar}
+        />
+        <Navigation toggleSidbar={() => toggleOpen(0)} />
+        <MenuToggle toggle={() => toggleOpen()} />
+      </motion.nav>
+    </motion.div>
   );
 };
 

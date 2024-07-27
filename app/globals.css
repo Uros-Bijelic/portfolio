@@ -79,7 +79,7 @@ input:-webkit-autofill:active {
   }
   /* TYPOGRPHY */
   .h1-semi {
-    @apply font-semibold text-[64px] leading-[70px] text-center;
+    @apply font-semibold text-3xl leading-[40px] md:text-[64px] md:leading-[70px] text-center;
   }
   .h3-bold {
     @apply font-bold text-5xl text-white-100;
