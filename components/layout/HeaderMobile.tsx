@@ -64,7 +64,7 @@ const HeaderMobile = () => {
       className="absolute inset-y-0 left-0 z-[5000] sm:hidden"
     >
       <motion.div
-        className="absolute inset-y-0 left-0 w-[300px] bg-white-100"
+        className="absolute inset-y-0 left-0 size-full h-screen w-[300px] border-r bg-black-600"
         variants={sidebar}
       />
       <Navigation toggleSidbar={() => toggleOpen(0)} />

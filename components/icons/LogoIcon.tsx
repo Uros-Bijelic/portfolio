@@ -12,10 +12,10 @@ const LogoIcon = (props: SVGProps<SVGSVGElement>) => (
   >
     <path
       d="M3.4 14.624V12.036C8.183 19.108 10.791 19.045 15.333 12.036V14.624H3.4Z"
-      fill="black"
+      fill="#ffffff"
     />
-    <path d="M3.4 7.695H6.616V17.987L3.4 14.69V7.695Z" fill="#595959" />
-    <path d="M13.45 4.88H16.666V14.69L13.45 17.987V4.88Z" fill="black" />
+    <path d="M3.4 7.695H6.616V17.987L3.4 14.69V7.695Z" fill="#ffffff" />
+    <path d="M13.45 4.88H16.666V14.69L13.45 17.987V4.88Z" fill="#ffffff" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -26,7 +26,7 @@ const LogoIcon = (props: SVGProps<SVGSVGElement>) => (
       fillRule="evenodd"
       clipRule="evenodd"
       d="M13.45 4.199L15.394 1.786 17.337 4.199H13.45Z"
-      fill="black"
+      fill="#ffffff"
     />
   </svg>
 );
