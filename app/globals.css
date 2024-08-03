@@ -19,7 +19,7 @@
 body {
   height: 100%;
   min-height: 100vh;
-  font-family: 'figtree';
+  font-family: 'figtree', sans-serif;
   @apply bg-black-800 text-white-300;
 }
 
@@ -85,16 +85,16 @@ input:-webkit-autofill:active {
     @apply font-bold text-5xl text-white-100;
   }
   .h4-bold {
-    @apply font-figtree font-bold text-[32px] leading-[35.2px] tracking-[-0.03em];
+    @apply font-bold text-[32px] leading-[35.2px] tracking-[-0.03em];
   }
   .p-medium {
-    @apply font-figtree font-normal text-[22px] leading-[26.4px] tracking-[-2%];
+    @apply font-normal text-[22px] leading-[26.4px] tracking-[-2%];
   }
   .p4-medium {
-    @apply font-figtree font-normal text-[18px] leading-[26.4px] tracking-[-2%];
+    @apply font-normal text-[18px] leading-[26.4px] tracking-[-2%];
   }
   /* TYPOGRPHY */
   .nav-link {
-    @apply font-figtree text-white-300 hover:text-white-100 hover:-translate-y-1 transition-transform leading-none;
+    @apply text-white-300 hover:text-white-100 hover:-translate-y-1 transition-transform leading-none;
   }
 }

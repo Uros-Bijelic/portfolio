@@ -108,7 +108,7 @@ const HeaderMobile: React.FC<IHeaderMobileProps> = ({ isAlwaysVisible }) => {
         className="fixed inset-y-0 left-0 z-[5000] sm:hidden"
       >
         <motion.div
-          className="fixed inset-y-0 left-0 size-full h-screen w-[300px] border-r bg-black-600"
+          className="fixed inset-y-0 left-0 size-full h-screen w-[300px] border-r border-r-black-400 bg-black-600"
           variants={sidebar}
         />
         <Navigation toggleSidbar={() => toggleOpen(0)} />

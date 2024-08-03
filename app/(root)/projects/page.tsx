@@ -23,7 +23,7 @@ const ProjectPage = () => {
         <div className="grid grid-cols-2 gap-10 max-sm:grid-cols-1">
           <Link href="/projects/gitnote">
             <CardContainer>
-              <CardBody className="group/card border-white/[0.2] relative size-auto rounded-xl border p-6 hover:shadow-2xl hover:shadow-emerald-500/[0.1]">
+              <CardBody className="group/card relative size-auto rounded-xl border-2 border-black-400 p-6 hover:shadow-2xl hover:shadow-emerald-500/[0.1]">
                 <CardItem translateZ="100" className="my-4 w-full">
                   <Image
                     src="/assets/images/git-note-desk-mob.svg"
@@ -49,7 +49,7 @@ const ProjectPage = () => {
           </Link>
           <Link href="/projects/dev-today">
             <CardContainer>
-              <CardBody className="group/card border-white/[0.2] relative size-auto rounded-xl border p-6 hover:shadow-2xl hover:shadow-emerald-500/[0.1]">
+              <CardBody className="group/card relative size-auto rounded-xl border-2 border-black-400 p-6 hover:shadow-2xl hover:shadow-emerald-500/[0.1]">
                 <CardItem translateZ="100" className="my-4 w-full">
                   <Image
                     src="/assets/images/dev-today-desk-mob.svg"

@@ -54,7 +54,7 @@ interface INavigation {
 export const Navigation: React.FC<INavigation> = ({ toggleSidbar }) => (
   <motion.ul
     variants={variants}
-    className="width-[230px] text-white absolute top-[100px] flex flex-col gap-5 p-[25px]"
+    className="absolute top-[100px] flex w-[270px] flex-col gap-5 pl-[30px]"
   >
     {NAV_ITEMS.map(({ href, icon, text, download }) => (
       <MenuItem

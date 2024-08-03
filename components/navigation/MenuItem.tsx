@@ -48,7 +48,7 @@ export const MenuItem: React.FC<IMenuItemProps> = ({
         href={href}
         download={download}
         target={download ? '_blank' : '_self'}
-        className="flex cursor-pointer items-center gap-2 text-white-100"
+        className="flex w-full cursor-pointer items-center gap-2.5 text-lg text-white-100"
         onClick={toggleSidbar}
       >
         {icon}
