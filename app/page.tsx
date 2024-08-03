@@ -13,7 +13,7 @@ const Home: React.FC<IHomeProps> = () => {
   return (
     <div className="mx-auto flex h-full flex-col">
       <Header isAlwaysVisible />
-      <HeaderMobile />
+      <HeaderMobile isAlwaysVisible />
       <Vortex
         // backgroundColor="#101014"
         rangeY={400}
