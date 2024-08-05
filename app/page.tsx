@@ -9,7 +9,7 @@ interface IHomeProps {}
 
 const Home: React.FC<IHomeProps> = () => {
   return (
-    <div className="mx-auto flex h-full max-h-screen flex-col ">
+    <div className="mx-auto flex h-full max-h-screen flex-col bg-[#000000]">
       {/* <Header isAlwaysVisible /> */}
       {/* <HeaderMobile isAlwaysVisible /> */}
       <Vortex
