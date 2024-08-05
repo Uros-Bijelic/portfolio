@@ -65,6 +65,20 @@ input:-webkit-autofill:active {
 }
 
 @layer utilities {
+  .custom-scrollbar {
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-button,
+    &::-webkit-scrollbar-track-piece {
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #5eafff;
+      border-radius: 40px;
+    }
+  }
   /* FLEX */
   .flex-between {
     @apply flex justify-between items-center;

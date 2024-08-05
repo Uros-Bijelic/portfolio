@@ -53,7 +53,7 @@ const ContactPage = () => {
         transition={{
           duration: 0.5,
         }}
-        className="md:flex-between z-20 mx-auto mt-20 flex w-full max-w-4xl flex-col overflow-auto rounded-2xl bg-[#151E2C] p-8 max-md:max-h-[80vh] md:flex-row md:gap-9"
+        className="md:flex-between custom-scrollbar z-20 mx-auto mt-20 flex w-full max-w-4xl flex-col overflow-auto rounded-2xl bg-[#151E2C] p-8 max-md:max-h-[80vh] md:flex-row md:gap-9"
       >
         <Form {...form}>
           <form
