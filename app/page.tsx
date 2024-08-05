@@ -1,25 +1,24 @@
 import HomeLinks from '@/components/HomeLinks';
+import Header from '@/components/layout/Header';
+import HeaderMobile from '@/components/layout/HeaderMobile';
 import { TextGenerateSubtitle } from '@/components/ui/TextGenerateSubtitle';
 import { TextGenerateTitle } from '@/components/ui/TextGenerateTitle';
 import { Vortex } from '@/components/ui/Vortex';
 
 // ----------------------------------------------------------------
 
-interface IHomeProps {}
-
-const Home: React.FC<IHomeProps> = () => {
+const Home = () => {
   return (
-    <div className="mx-auto flex h-full max-h-screen flex-col bg-[#000000]">
-      {/* <Header isAlwaysVisible /> */}
-      {/* <HeaderMobile isAlwaysVisible /> */}
+    <div className="mx-auto flex max-h-screen flex-col bg-[#000000]">
+      <Header isAlwaysVisible />
+      <HeaderMobile isAlwaysVisible />
       <Vortex
-        // backgroundColor="#101014"
         rangeY={400}
         particleCount={100}
-        className="flex size-full max-h-screen min-h-screen flex-1 flex-col items-center justify-center border border-red-500 px-4"
+        className="flex size-full max-h-screen min-h-screen flex-col items-center justify-center border px-4"
       >
         <div className="max-w-screen-lg">
-          <section className="flex-center h-screen flex-col ">
+          <section className="flex-center flex-col">
             <TextGenerateTitle
               words="Hi! I'm Uroš, a Next.js Developer based in Serbia."
               duration={0.2}
