@@ -15,6 +15,14 @@ const GitnotePage = () => {
       <div className="px-5">
         <TracingBeam>
           <div className="flex-center mx-auto mb-10 flex max-w-[700px] flex-col gap-4 px-2">
+            <p>
+              Due to the time limitation and splitting repositories app is
+              unavailable at the moment. App will be availble as soon as small
+              bugs are fixed and new code is being deployed. Work in progress
+              for some features like implementing Next Clerk instead of Next
+              Auth, implmenting Google Maps for choosing and updating Meetup
+              location etc...
+            </p>
             <h1 className="h1-semi">
               DevToday - A content creation platform for developers
             </h1>
@@ -29,7 +37,7 @@ const GitnotePage = () => {
           <div className="relative mb-16 h-[500px] w-full">
             <Image
               src="/assets/images/dev-today.svg"
-              alt="Gitnote Desktop"
+              alt="Dev Today Desktop"
               fill
               className="object-cover"
             />
