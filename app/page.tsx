@@ -9,15 +9,14 @@ interface IHomeProps {}
 
 const Home: React.FC<IHomeProps> = () => {
   return (
-    <div className="mx-auto flex h-full flex-col bg-red-300">
+    <div className="mx-auto flex h-full max-h-screen flex-col">
       {/* <Header isAlwaysVisible /> */}
       {/* <HeaderMobile isAlwaysVisible /> */}
       <Vortex
         // backgroundColor="#101014"
         rangeY={400}
         particleCount={100}
-        // baseHue={120}
-        className="flex size-full min-h-screen flex-col items-center justify-center px-4"
+        className="flex size-full max-h-screen min-h-screen flex-col items-center justify-center px-4"
       >
         <div className="max-w-screen-lg">
           <section className="flex-center h-screen flex-col ">
