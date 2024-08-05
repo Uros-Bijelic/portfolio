@@ -9,13 +9,13 @@ import { Vortex } from '@/components/ui/Vortex';
 
 const Home = () => {
   return (
-    <div className="mx-auto flex max-h-screen flex-col bg-[#000000]">
+    <div className="mx-auto flex min-h-screen flex-col bg-[#000000]">
       <Header isAlwaysVisible />
       <HeaderMobile isAlwaysVisible />
       <Vortex
         rangeY={400}
         particleCount={100}
-        className="flex size-full max-h-screen min-h-screen flex-col items-center justify-center border px-4"
+        className="flex max-h-screen min-h-screen flex-col items-center justify-center px-4"
       >
         <div className="max-w-screen-lg">
           <section className="flex-center flex-col">
