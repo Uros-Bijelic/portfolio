@@ -1,5 +1,4 @@
 import HomeLinks from '@/components/HomeLinks';
-import Header from '@/components/layout/Header';
 import { TextGenerateSubtitle } from '@/components/ui/TextGenerateSubtitle';
 import { TextGenerateTitle } from '@/components/ui/TextGenerateTitle';
 import { Vortex } from '@/components/ui/Vortex';
@@ -11,7 +10,7 @@ interface IHomeProps {}
 const Home: React.FC<IHomeProps> = () => {
   return (
     <div className="mx-auto flex h-full flex-col">
-      <Header isAlwaysVisible />
+      {/* <Header isAlwaysVisible /> */}
       {/* <HeaderMobile isAlwaysVisible /> */}
       <Vortex
         // backgroundColor="#101014"
