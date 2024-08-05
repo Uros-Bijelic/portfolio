@@ -1,6 +1,5 @@
 import HomeLinks from '@/components/HomeLinks';
 import Header from '@/components/layout/Header';
-import HeaderMobile from '@/components/layout/HeaderMobile';
 import { TextGenerateSubtitle } from '@/components/ui/TextGenerateSubtitle';
 import { TextGenerateTitle } from '@/components/ui/TextGenerateTitle';
 import { Vortex } from '@/components/ui/Vortex';
@@ -13,7 +12,7 @@ const Home: React.FC<IHomeProps> = () => {
   return (
     <div className="mx-auto flex h-full flex-col">
       <Header isAlwaysVisible />
-      <HeaderMobile isAlwaysVisible />
+      {/* <HeaderMobile isAlwaysVisible /> */}
       <Vortex
         // backgroundColor="#101014"
         rangeY={400}
