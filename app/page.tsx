@@ -9,13 +9,13 @@ import { Vortex } from '@/components/ui/Vortex';
 
 const Home = () => {
   return (
-    <div className="h-screen overflow-y-hidden bg-[#000000]">
+    <div className="h-screen overflow-hidden bg-[#000000]">
       <Header isAlwaysVisible />
       <HeaderMobile isAlwaysVisible />
       <Vortex
         rangeY={400}
         particleCount={100}
-        className="flex h-[95vh] flex-col items-center justify-center px-4"
+        className="flex h-[95vh] flex-col items-center justify-center overflow-hidden px-4"
       >
         <div className="max-w-screen-lg">
           <section className="flex-center flex-col">

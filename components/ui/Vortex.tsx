@@ -243,7 +243,12 @@ export const Vortex: React.FC<IVortexProps> = (props) => {
   }, []);
 
   return (
-    <div className={cn('relative h-full w-full', props.containerClassName)}>
+    <div
+      className={cn(
+        'relative h-full w-full overflow-hidden',
+        props.containerClassName,
+      )}
+    >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
