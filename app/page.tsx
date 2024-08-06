@@ -9,7 +9,7 @@ import { Vortex } from '@/components/ui/Vortex';
 
 const Home = () => {
   return (
-    <div className="mx-auto flex min-h-screen flex-col bg-[#000000]">
+    <div className="bg-[#000000]">
       <Header isAlwaysVisible />
       <HeaderMobile isAlwaysVisible />
       <Vortex
