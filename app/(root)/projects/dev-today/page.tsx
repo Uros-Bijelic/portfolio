@@ -144,7 +144,7 @@ const GitnotePage = () => {
                 <div>
                   <h4 className="h4-bold">Final Site</h4>
                   <div>
-                    <div className="flex gap-2">
+                    {/* <div className="flex gap-2">
                       github-note.vercel.app --- this will be dev today
                       <Image
                         src="/assets/icons/link-arrow.svg"
@@ -152,7 +152,7 @@ const GitnotePage = () => {
                         height={20}
                         alt="Arrow"
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
