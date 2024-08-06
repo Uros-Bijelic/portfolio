@@ -106,26 +106,26 @@ const GitnotePage = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <Link
-                href="https://github-note.vercel.app"
-                className="flex flex-col gap-3.5"
-                target="_blank"
-              >
-                <div>
-                  <h4 className="h4-bold">Final Site</h4>
+              <div>
+                <Link
+                  href="https://github-note.vercel.app"
+                  className="flex flex-col gap-3.5"
+                  target="_blank"
+                >
                   <div>
-                    <div className="flex gap-2">
-                      github-note.vercel.app
-                      <Image
-                        src="/assets/icons/link-arrow.svg"
-                        width={20}
-                        height={20}
-                        alt="Arrow"
-                      />
+                    <h4 className="h4-bold">Final Site</h4>
+                    <div>
+                      <div className="flex gap-2">
+                        github-note.vercel.app
+                        <Image
+                          src="/assets/icons/link-arrow.svg"
+                          width={20}
+                          height={20}
+                          alt="Arrow"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="flex-center h-[532px] rounded-xl bg-[#1D1F25B2]">
                   <div className="flex-center relative mt-4 w-full flex-1 rounded-lg">
                     <Image
                       src="/assets/images/git-note-desk-mob.svg"
@@ -134,8 +134,16 @@ const GitnotePage = () => {
                       height={350}
                     />
                   </div>
+                </Link>
+                <div className="pt-4 text-blue-500">
+                  <Link
+                    href="https://github.com/urke90/Github-Note"
+                    target="_blank"
+                  >
+                    Check code on Github - github.com/urke90/Github-Note
+                  </Link>
                 </div>
-              </Link>
+              </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
