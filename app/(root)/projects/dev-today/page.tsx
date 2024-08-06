@@ -16,12 +16,12 @@ const GitnotePage = () => {
         <TracingBeam>
           <div className="flex-center mx-auto mb-10 flex max-w-[700px] flex-col gap-4 px-2">
             <p>
-              Due to the time limitation and splitting repositories app is
-              unavailable at the moment. App will be availble as soon as small
-              bugs are fixed and new code is being deployed. Work in progress
-              for some features like implementing Next Clerk instead of Next
-              Auth, implmenting Google Maps for choosing and updating Meetup
-              location etc...
+              Due to the time limitation while working in the team and splitting
+              repositories, app is unavailable at the moment. App will be
+              availble as soon as small bugs are fixed and new code is being
+              deployed. Work in progress for some features like implementing
+              Next Clerk instead of Next Auth, implmenting Google Maps for
+              choosing and updating Meetup location etc...
             </p>
             <h1 className="h1-semi">
               DevToday - A content creation platform for developers
@@ -155,17 +155,30 @@ const GitnotePage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex-center h-[532px] rounded-xl bg-[#1D1F25B2]">
-                  <div className="flex-center relative mt-4 w-full flex-1 rounded-lg">
-                    <Image
-                      src="/assets/images/dev-today-desk-mob.svg"
-                      alt="Gitnote Desktop"
-                      width={742}
-                      height={350}
-                    />
-                  </div>
+
+                <div className="flex-center relative mt-4 w-full flex-1 rounded-lg">
+                  <Image
+                    src="/assets/images/dev-today-desk-mob.svg"
+                    alt="Gitnote Desktop"
+                    width={742}
+                    height={350}
+                  />
                 </div>
               </Link>
+              <div className="flex flex-col gap-2 pt-4 text-blue-500">
+                <Link
+                  href="https://github.com/urke90/Dev-Today-FE"
+                  target="_blank"
+                >
+                  Check frontend code on Github - github.com/urke90/Dev-Today-FE
+                </Link>
+                <Link
+                  href="https://github.com/urke90/Dev-Today-BE"
+                  target="_blank"
+                >
+                  Check backend code on Github - github.com/urke90/Dev-Today-BE
+                </Link>
+              </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}

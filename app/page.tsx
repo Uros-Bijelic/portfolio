@@ -15,7 +15,7 @@ const Home = () => {
       <Vortex
         rangeY={400}
         particleCount={100}
-        className="flex h-[95vh] flex-col items-center justify-center overflow-hidden px-4"
+        className="flex h-[90vh] flex-col items-center justify-center overflow-hidden px-4"
       >
         <div className="max-w-screen-lg">
           <section className="flex-center flex-col">
