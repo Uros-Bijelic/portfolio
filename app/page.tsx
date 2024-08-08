@@ -1,13 +1,10 @@
-import Header from '@/components/layout/Header';
-import HeaderMobile from '@/components/layout/HeaderMobile';
-
 // ----------------------------------------------------------------
 
 const Home = () => {
   return (
     <div className="relative  h-full overflow-hidden border ">
-      <Header isAlwaysVisible />
-      <HeaderMobile isAlwaysVisible />
+      {/* <Header isAlwaysVisible />
+      <HeaderMobile isAlwaysVisible /> */}
       {/* <Vortex
         rangeY={400}
         particleCount={100}
