@@ -5,7 +5,7 @@ import HeaderMobile from '@/components/layout/HeaderMobile';
 
 const Home = () => {
   return (
-    <div className="relative  h-screen overflow-hidden border ">
+    <div className="relative  h-full overflow-hidden border ">
       <Header isAlwaysVisible />
       <HeaderMobile isAlwaysVisible />
       {/* <Vortex
