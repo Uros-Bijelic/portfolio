@@ -23,7 +23,7 @@ const RootLayout = ({
     <html lang="en">
       <body className={`${figtree.variable} antialiased`}>
         <ToastContainer autoClose={20000} />
-        <main className="mx-auto h-full min-h-screen">{children}</main>
+        <main className="mx-auto min-h-screen">{children}</main>
       </body>
     </html>
   );
