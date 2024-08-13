@@ -17,7 +17,7 @@
 }
 
 body {
-  height: 100%;
+  /* height: 100%; */
   min-height: 100vh;
   font-family: 'figtree', sans-serif;
   @apply bg-black-800 text-white-300;

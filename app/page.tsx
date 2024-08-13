@@ -9,7 +9,7 @@ import { Vortex } from '@/components/ui/Vortex';
 
 const Home = () => {
   return (
-    <div className="relative  h-full overflow-hidden border ">
+    <div className="relative h-screen min-h-screen overflow-hidden bg-[#000000] ">
       <Header isAlwaysVisible />
       <HeaderMobile isAlwaysVisible />
       <Vortex
