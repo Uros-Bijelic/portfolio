@@ -76,7 +76,7 @@ const ProjectPage = () => {
           </Link>
         </div>
         <div className="flex flex-col gap-10">
-          <h3 className="h3-bold mb-4">My Tech Stack</h3>
+          <h3 className="h3-bold mb-4 max-md:text-center">My Tech Stack</h3>
           <ul className="flex flex-wrap justify-center gap-12">
             {TECH_STACK_ICONS.map((icon) => (
               <li

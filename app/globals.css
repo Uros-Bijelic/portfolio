@@ -89,14 +89,14 @@ input:-webkit-autofill:active {
   /* FLEX */
 
   .page-wrapper {
-    @apply mx-auto flex size-full max-w-screen-lg flex-1 flex-col px-4 py-40;
+    @apply mx-auto flex size-full max-w-screen-lg flex-1 flex-col px-4 pt-40 pb-20;
   }
   /* TYPOGRPHY */
   .h1-semi {
     @apply font-semibold text-3xl leading-[40px] md:text-[64px] md:leading-[70px] text-center;
   }
   .h3-bold {
-    @apply font-bold text-5xl text-white-100;
+    @apply font-bold text-3xl sm:text-5xl text-white-100;
   }
   .h4-bold {
     @apply font-bold text-[32px] leading-[35.2px] tracking-[-0.03em];
