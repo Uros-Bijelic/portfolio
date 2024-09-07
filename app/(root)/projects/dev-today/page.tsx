@@ -9,20 +9,12 @@ import { GIT_NOTE_ICONS } from '@/constants';
 
 // ----------------------------------------------------------------
 
-const GitnotePage = () => {
+const DevTodayPage = () => {
   return (
     <section className="page-wrapper">
       <div className="px-5">
         <TracingBeam>
           <div className="flex-center mx-auto mb-10 flex max-w-[700px] flex-col gap-4 px-2">
-            <p>
-              Due to the time limitation while working in the team and splitting
-              repositories, app is unavailable at the moment. App will be
-              availble as soon as small bugs are fixed and new code is being
-              deployed. Work in progress for some features like implementing
-              Next Clerk instead of Next Auth, implmenting Google Maps for
-              choosing and updating Meetup location etc...
-            </p>
             <h1 className="h1-semi">
               DevToday - A content creation platform for developers
             </h1>
@@ -39,7 +31,7 @@ const GitnotePage = () => {
               src="/assets/images/dev-today.svg"
               alt="Dev Today Desktop"
               fill
-              className="object-cover"
+              className="rounded-xl object-cover"
             />
           </div>
           <div className=" flex flex-col gap-14">
@@ -140,19 +132,21 @@ const GitnotePage = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <Link href="/" className="flex flex-col gap-3.5">
+              <Link
+                href="https://dev-today-fe.vercel.app/"
+                target="_blank"
+                className="flex flex-col gap-3.5"
+              >
                 <div>
-                  <h4 className="h4-bold">Final Site</h4>
-                  <div>
-                    {/* <div className="flex gap-2">
-                      github-note.vercel.app --- this will be dev today
-                      <Image
-                        src="/assets/icons/link-arrow.svg"
-                        width={20}
-                        height={20}
-                        alt="Arrow"
-                      />
-                    </div> */}
+                  <h4 className="h4-bold mb-2">Final Site</h4>
+                  <div className="flex gap-2 text-blue-500">
+                    Dev Today
+                    <Image
+                      src="/assets/icons/link-arrow.svg"
+                      width={20}
+                      height={20}
+                      alt="Arrow"
+                    />
                   </div>
                 </div>
 
@@ -170,13 +164,13 @@ const GitnotePage = () => {
                   href="https://github.com/urke90/Dev-Today-FE"
                   target="_blank"
                 >
-                  Check frontend code on Github - github.com/urke90/Dev-Today-FE
+                  Frontend code on Github - github.com/urke90/Dev-Today-FE
                 </Link>
                 <Link
                   href="https://github.com/urke90/Dev-Today-BE"
                   target="_blank"
                 >
-                  Check backend code on Github - github.com/urke90/Dev-Today-BE
+                  Backend code on Github - github.com/urke90/Dev-Today-BE
                 </Link>
               </div>
             </motion.div>
@@ -274,4 +268,4 @@ const GitnotePage = () => {
   );
 };
 
-export default GitnotePage;
+export default DevTodayPage;

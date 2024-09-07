@@ -24,13 +24,12 @@ const GitnotePage = () => {
               management for users worldwide
             </p>
           </div>
-
           <div className="relative mb-16 h-[500px] w-full">
             <Image
               src="/assets/images/git-note.svg"
               alt="Gitnote Desktop"
               fill
-              className="object-cover"
+              className="rounded-xl object-cover"
             />
           </div>
           <div className=" flex flex-col gap-14">
@@ -109,21 +108,19 @@ const GitnotePage = () => {
               <div>
                 <Link
                   href="https://github-note.vercel.app"
-                  className="flex flex-col gap-3.5"
+                  className="mb-2 flex flex-col gap-3.5"
                   target="_blank"
                 >
                   <div>
-                    <h4 className="h4-bold">Final Site</h4>
-                    <div>
-                      <div className="flex gap-2">
-                        github-note.vercel.app
-                        <Image
-                          src="/assets/icons/link-arrow.svg"
-                          width={20}
-                          height={20}
-                          alt="Arrow"
-                        />
-                      </div>
+                    <h4 className="h4-bold mb-2">Final Site</h4>
+                    <div className="flex gap-2 text-blue-500">
+                      Git Note
+                      <Image
+                        src="/assets/icons/link-arrow.svg"
+                        width={20}
+                        height={20}
+                        alt="Arrow"
+                      />
                     </div>
                   </div>
                   <div className="flex-center relative mt-4 w-full flex-1 rounded-lg">
@@ -140,7 +137,7 @@ const GitnotePage = () => {
                     href="https://github.com/urke90/Github-Note"
                     target="_blank"
                   >
-                    Check code on Github - github.com/urke90/Github-Note
+                    Code on Github - github.com/urke90/Github-Note
                   </Link>
                 </div>
               </div>
