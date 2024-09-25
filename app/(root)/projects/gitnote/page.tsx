@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
+// import { TracingBeam } from '@/components/ui/TracingBeam';
+// https://github.com/framer/motion/issues/441
 import { TracingBeam } from '@/components/ui/TracingBeam';
 import { GIT_NOTE_ICONS } from '@/constants';
 
@@ -217,7 +219,7 @@ const GitnotePage = () => {
               <p className="p-medium">
                 Looking ahead, I&apos;m really excited about what&apos;s next
                 for GitNote. It&apos;s more than just a tool to help me stay
-                organized; it&apos;ss changing the way I work and grow as a
+                organized; it&apos;s changing the way I work and grow as a
                 developer.
               </p>
             </motion.div>
