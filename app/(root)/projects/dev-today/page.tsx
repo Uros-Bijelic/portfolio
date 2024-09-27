@@ -133,7 +133,7 @@ const DevTodayPage = () => {
               transition={{ duration: 1 }}
             >
               <Link
-                href="https://dev-today-fe.vercel.app/"
+                href="https://dev-today.urosbijelic.com"
                 target="_blank"
                 className="flex flex-col gap-3.5"
               >

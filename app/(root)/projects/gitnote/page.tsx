@@ -109,7 +109,7 @@ const GitnotePage = () => {
             >
               <div>
                 <Link
-                  href="https://github-note.vercel.app"
+                  href="https://github-note.urosbijelic.com/"
                   className="mb-2 flex flex-col gap-3.5"
                   target="_blank"
                 >
