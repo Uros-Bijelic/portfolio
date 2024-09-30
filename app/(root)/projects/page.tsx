@@ -67,7 +67,7 @@ const ProjectPage = () => {
                   translateZ="60"
                   className="p4-medium line-clamp-2"
                 >
-                  DevToday is a content creation platform for developers. It
+                  Dev Today is a content creation platform for developers. It
                   offers a feed of dev news, podcasts, and events, keeping you
                   up-to-date with the latest tech.
                 </CardItem>
