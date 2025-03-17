@@ -18,18 +18,18 @@ const GitnotePage = () => {
         <TracingBeam>
           <div className="flex-center mx-auto mb-10 flex max-w-[700px] flex-col gap-4 px-2">
             <h1 className="h1-semi">
-              GitNote - A knowledge repository for Developers
+              Git Note - A knowledge repository for Developers
             </h1>
             <p className="p4-medium text-center">
               With its innovative features and continuous improvement efforts,
-              GitNote is poised to revolutionize workflow and knowledge
+              Git Note is poised to revolutionize workflow and knowledge
               management for users worldwide
             </p>
           </div>
           <div className="relative mb-16 h-[500px] w-full">
             <Image
               src="/assets/images/git-note.svg"
-              alt="Gitnote Desktop"
+              alt="Git Note Desktop"
               fill
               className="rounded-xl object-cover"
             />
@@ -43,9 +43,9 @@ const GitnotePage = () => {
             >
               <h4 className="h4-bold">Overview</h4>
               <p className="p-medium">
-                GitNote is a powerful application designed to streamline your
+                Git Note is a powerful application designed to streamline your
                 workflow, enhance knowledge management, and facilitate code
-                snippet storage. GitNote offers a seamless user experience with
+                snippet storage. Git Note offers a seamless user experience with
                 server-side searching, pagination, and a recommendation system.
               </p>
             </motion.div>
@@ -59,7 +59,7 @@ const GitnotePage = () => {
               <p className="p-medium">
                 Traditional note-taking and code storage methods often lack
                 organization and collaboration features, leading to
-                inefficiencies and information silos. GitNote addresses these
+                inefficiencies and information silos. Git Note addresses these
                 challenges by providing a centralized platform for tracking
                 workflow, storing knowledge, and sharing code snippets.
               </p>
@@ -96,7 +96,7 @@ const GitnotePage = () => {
             >
               <h4 className="h4-bold">Reflection</h4>
               <p className="p-medium">
-                GitNote helps you keep track of your ideas and code snippets,
+                Git Note helps you keep track of your ideas and code snippets,
                 making your work smoother and more efficient. It&apos;s great
                 for many people.Developers can easily manage projects, save
                 important code bits for later, and document their work
@@ -128,7 +128,7 @@ const GitnotePage = () => {
                   <div className="flex-center relative mt-4 w-full flex-1 rounded-lg">
                     <Image
                       src="/assets/images/git-note-desk-mob.svg"
-                      alt="Gitnote Desktop"
+                      alt="Git Note Desktop"
                       width={742}
                       height={350}
                     />
@@ -218,7 +218,7 @@ const GitnotePage = () => {
               <h4 className="h4-bold">Future</h4>
               <p className="p-medium">
                 Looking ahead, I&apos;m really excited about what&apos;s next
-                for GitNote. It&apos;s more than just a tool to help me stay
+                for Git Note. It&apos;s more than just a tool to help me stay
                 organized; it&apos;s changing the way I work and grow as a
                 developer.
               </p>
