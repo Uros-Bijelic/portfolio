@@ -70,12 +70,12 @@ const Header: React.FC<IHeaderProps> = ({ isAlwaysVisible = false }) => {
           >
             Home
           </Link>
-          <Link
+          {/* <Link
             href="/projects"
             className={`nav-link ${pathname.includes('/projects') ? 'text-white-100' : ''}`}
           >
             Work
-          </Link>
+          </Link> */}
           <Link
             href="/contact"
             className={`nav-link ${pathname === '/contact' ? 'text-white-100' : ''}`}

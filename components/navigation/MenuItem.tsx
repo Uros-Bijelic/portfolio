@@ -20,8 +20,6 @@ const variants = {
   },
 };
 
-// const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
-
 interface IMenuItemProps {
   href: string;
   icon: React.ReactNode;
@@ -37,7 +35,7 @@ export const MenuItem: React.FC<IMenuItemProps> = ({
   toggleSidbar,
   download = false,
 }) => {
-  // const style = { border: `2px solid ${colors[i]}` };
+  console.log('href', href);
   return (
     <motion.li
       variants={variants}
