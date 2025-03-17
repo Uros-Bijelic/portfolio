@@ -21,9 +21,9 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       <body className={`${figtree.variable} antialiased`}>
-        <ToastContainer autoClose={20000} />
+        <ToastContainer autoClose={2000} />
         <main className="mx-auto min-h-screen">{children}</main>
       </body>
     </html>

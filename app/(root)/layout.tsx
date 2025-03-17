@@ -11,7 +11,7 @@ const Layout: React.FC<ILayoutProps> = ({ children }) => {
     <div className="mx-auto h-full min-h-screen">
       <Header />
       <HeaderMobile />
-      <main className="">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   );

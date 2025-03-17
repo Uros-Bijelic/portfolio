@@ -3,7 +3,6 @@ import { MenuItem } from './MenuItem';
 import ContactIcon from '../icons/ContactIcon';
 import DownloadIcon from '../icons/DownloadIcon';
 import LogoIcon from '../icons/LogoIcon';
-import ProjectsIcon from '../icons/ProjectsIcon';
 
 import { motion } from 'framer-motion';
 
@@ -29,11 +28,11 @@ const NAV_ITEMS: {
     href: '/',
     icon: <LogoIcon className="text-white-100" />,
   },
-  {
-    text: 'Work',
-    href: '/projects',
-    icon: <ProjectsIcon />,
-  },
+  // {
+  //   text: 'Work',
+  //   href: '/projects',
+  //   icon: <ProjectsIcon />,
+  // },
   {
     text: 'Contact',
     href: '/contact',

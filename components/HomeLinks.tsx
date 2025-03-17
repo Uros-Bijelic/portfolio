@@ -18,7 +18,7 @@ const HomeLinks = () => {
       className="flex flex-wrap justify-center gap-5"
     >
       <Link
-        href="/projects"
+        href="#projects"
         className="relative min-w-[128px] p-[3px] text-center transition-transform hover:-translate-y-1"
       >
         <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500" />
