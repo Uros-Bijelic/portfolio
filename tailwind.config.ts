@@ -69,27 +69,6 @@ const config: Config = {
           },
         },
       },
-      // colors: {
-      //   white: {
-      //     100: '#FFFFFF',
-      //     300: '#DDE4FF',
-      //     800: '#CBCBFF',
-      //     900: '#000319',
-      //   },
-      //   blue: {
-      //     500: '#5EAFFF',
-      //   },
-      //   black: {
-      //     100: '#08080F',
-      //     400: '#2A2C35',
-      //     500: '#1D1F2580',
-      //     600: '#1D1F25',
-      //     800: '#101014',
-      //   },
-      //   purple: {
-      //     500: '#CBACF9',
-      //   },
-      // },
     },
   },
   plugins: [addVariablesForColors],
