@@ -18,12 +18,12 @@ interface IEmailSender {
   contact?: string;
 }
 
-const EmailTemplate: React.FC<IEmailSender> = ({
+const EmailTemplate = ({
   name,
   email,
   description,
   contact,
-}) => {
+}: IEmailSender) => {
   const previewText = `Read ${name}'s review`;
 
   return (

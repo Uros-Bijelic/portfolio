@@ -2,7 +2,7 @@
 
 import { MenuToggle } from '../navigation/MenuToggle';
 import { Navigation } from '../navigation/Navigation';
-
+import type { Variants } from "framer-motion";
 import {
   motion,
   useCycle,
@@ -19,7 +19,7 @@ const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
     transition: {
-      type: 'spring',
+      type: 'spring' as const,
       stiffness: 20,
       restDelta: 2,
     },
@@ -28,7 +28,7 @@ const sidebar = {
     clipPath: 'circle(30px at 40px 40px)',
     transition: {
       delay: 0.5,
-      type: 'spring',
+      type: 'spring' as const,
       stiffness: 400,
       damping: 40,
     },
@@ -98,17 +98,17 @@ const HeaderMobile: React.FC<IHeaderMobileProps> = ({ isAlwaysVisible }) => {
       transition={{
         duration: 0.2,
       }}
-      className="fixed z-[5001]"
+      className="fixed z-5001"
     >
       <motion.nav
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
         custom={height}
         ref={containerRef}
-        className="fixed inset-y-0 left-0 z-[5000] sm:hidden"
+        className="fixed inset-y-0 left-0 z-5000 sm:hidden"
       >
         <motion.div
-          className="fixed inset-y-0 left-0 size-full h-screen w-[300px] border-r border-r-black-400 bg-black-600"
+          className="fixed inset-y-0 left-0 size-full h-screen w-75 border-r border-r-black-400 bg-black-600"
           variants={sidebar}
         />
         <Navigation toggleSidbar={() => toggleOpen(0)} />

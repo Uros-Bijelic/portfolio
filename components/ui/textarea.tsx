@@ -38,16 +38,16 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setVisible(true)}
         onMouseLeave={() => setVisible(false)}
-        className="group/input rounded-lg p-[2px] transition duration-300"
+        className="group/input rounded-lg p-0.5 transition duration-300"
       >
         <textarea
           className={cn(
-            `flex h-10 w-full border border-[#2C3C56] bg-[#192333] text-black text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent 
+            `flex h-10 w-full border border-[#2C3C56] bg-[#192333] text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent 
           file:text-sm font-figtree file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600 
-          focus-visible:outline-none focus-visible:ring-[2px]  focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600
+          focus-visible:outline-none focus-visible:ring-2  focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600
            disabled:cursor-not-allowed disabled:opacity-50
            dark:shadow-[0px_0px_1px_1px_var(--neutral-700)]
-           group-hover/input:shadow-none transition duration-400 min-h-[100px]
+           group-hover/input:shadow-none transition duration-400 min-h-25
            `,
             className,
           )}
