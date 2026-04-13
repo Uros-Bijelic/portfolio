@@ -18,25 +18,27 @@ export const TextGenerateSubtitle = ({
   duration?: number;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(' ');
+  const wordsArray = words.split(' ');
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeoutId = window.setTimeout(() => {
+      if (!scope.current) return;
+
       animate(
-        'span',
+        scope.current.querySelectorAll('span'),
         {
           opacity: 1,
           filter: filter ? 'blur(0px)' : 'none',
         },
         {
-          duration: duration ? duration : 1,
+          duration: duration || 1,
           delay: stagger(0.2),
-          // delay: 4,
         },
       );
     }, 1800);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scope.current]);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [animate, duration, filter, words, scope]);
 
   const renderWords = () => {
     return (
