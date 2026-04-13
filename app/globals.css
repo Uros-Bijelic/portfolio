@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+/* @tailwind base;
+@tailwind components; */
+/* @tailwind utilities; */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -14,6 +16,27 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+@theme {
+    /* WHITE */
+  --color-white-100: #FFFFFF;
+  --color-white-300: #DDE4FF;
+  --color-white-800: #CBCBFF;
+  --color-white-900: #000319;
+
+  /* BLUE */
+  --color-blue-500: #5EAFFF;
+
+  /* BLACK */
+  --color-black-100: #08080F;
+  --color-black-400: #2A2C35;
+  --color-black-500: #1D1F2580;
+  --color-black-600: #1D1F25;
+  --color-black-800: #101014;
+
+  /* PURPLE */
+  --color-purple-500: #CBACF9;
 }
 
 body {

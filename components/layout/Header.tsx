@@ -49,9 +49,9 @@ const Header: React.FC<IHeaderProps> = ({ isAlwaysVisible = false }) => {
       transition={{
         duration: 0.2,
       }}
-      className="fixed z-[5001] w-full px-4 max-sm:hidden md:px-5"
+      className="fixed z-5001 w-full px-4 max-sm:hidden md:px-5"
     >
-      <nav className="flex-between mx-auto max-w-screen-lg">
+      <nav className="flex-between mx-auto max-w-5xl">
         <Link href="/" className="nav-link">
           <div className="relative">
             <Image
@@ -60,6 +60,7 @@ const Header: React.FC<IHeaderProps> = ({ isAlwaysVisible = false }) => {
               height={40}
               sizes="(max-width: 768px) 24px, (max-width: 1200px) 50vw, 33vw"
               alt="Logo"
+              loading="eager"
             />
           </div>
         </Link>

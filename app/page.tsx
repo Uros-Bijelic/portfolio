@@ -23,7 +23,7 @@ const Home = () => {
         particleCount={100}
         className="flex h-screen flex-col items-center justify-center overflow-hidden px-5"
       >
-        <div className="max-w-screen-lg">
+        <div className="max-w-5xl">
           <section className="flex-center flex-col">
             <TextGenerateTitle
               words="Hi! I'm Uroš, a Next.js Developer based in Serbia."
@@ -39,7 +39,7 @@ const Home = () => {
           </section>
         </div>
       </Vortex>
-      <section id="projects" className="page-wrapper !px-5 !pt-0">
+      <section id="projects" className="page-wrapper px-5! pt-0!">
         <div className="flex flex-col gap-16">
           <div className="flex shrink-0 flex-col items-baseline self-start">
             <h3 className="h3-bold mb-4">My Work</h3>
@@ -48,7 +48,7 @@ const Home = () => {
           <div className="grid grid-cols-2 gap-10 max-sm:grid-cols-1">
             <Link href="/projects/gitnote">
               <CardContainer>
-                <CardBody className="group/card relative size-auto rounded-xl border-2 border-black-400 p-6 hover:shadow-2xl hover:shadow-emerald-500/[0.1]">
+                <CardBody className="group/card relative size-auto rounded-xl border-2 border-black-400 p-6 hover:shadow-2xl hover:shadow-emerald-500/10">
                   <CardItem translateZ="100" className="my-4 w-full">
                     <Image
                       src="/assets/images/git-note-desk-mob.svg"
@@ -74,7 +74,7 @@ const Home = () => {
             </Link>
             <Link href="/projects/dev-today">
               <CardContainer>
-                <CardBody className="group/card relative size-auto rounded-xl border-2 border-black-400 p-6 hover:shadow-2xl hover:shadow-emerald-500/[0.1]">
+                <CardBody className="group/card relative size-auto rounded-xl border-2 border-black-400 p-6 hover:shadow-2xl hover:shadow-emerald-500/10">
                   <CardItem translateZ="100" className="my-4 w-full">
                     <Image
                       src="/assets/images/dev-today-desk-mob.svg"
@@ -106,7 +106,7 @@ const Home = () => {
               {TECH_STACK_ICONS.map((icon) => (
                 <li
                   key={icon}
-                  className="flex-center size-[93px] rounded-full bg-[#242938]"
+                  className="flex-center size-23.25 rounded-full bg-[#242938]"
                 >
                   <Image
                     src={`/assets/icons/tech-stack/${icon}.svg`}

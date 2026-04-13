@@ -131,6 +131,7 @@ const GitnotePage = () => {
                       alt="Git Note Desktop"
                       width={742}
                       height={350}
+                      loading="eager"
                     />
                   </div>
                 </Link>

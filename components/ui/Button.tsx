@@ -10,9 +10,9 @@ interface IButtonProps {
 
 export const ButtonBorderGradient: React.FC<IButtonProps> = ({ children }) => {
   return (
-    <button className="relative p-[3px]">
-      <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500" />
-      <div className="bg-black text-white group relative rounded-[6px] bg-[#000000] px-8 py-2 transition hover:bg-transparent">
+    <button className="relative p-0.75">
+      <div className="absolute inset-0 rounded-lg bg-linear-to-r from-indigo-500 to-purple-500" />
+      <div className="bg-black text-white group relative rounded-md px-8 py-2 transition hover:bg-transparent">
         {children}
       </div>
     </button>
