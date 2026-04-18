@@ -7,9 +7,6 @@ import {
   landingOption,
 } from '@/components/landing/option-data';
 
-const navLinkClass =
-  'rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/76 transition hover:border-white/20 hover:bg-white/8';
-
 export default function LandingPage() {
   const current = landingOption;
 
@@ -125,7 +122,7 @@ export default function LandingPage() {
               Two flagship builds, each with its own detail page.
             </h2>
           </div>
-          <Link href="/contact" className={navLinkClass}>
+          <Link href="/contact" className="rounded-full px-4 py-2 text-sm  chip">
             Available for frontend work
           </Link>
         </div>
