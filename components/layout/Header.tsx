@@ -77,7 +77,7 @@ export default function Header({ isAlwaysVisible = false }: HeaderProps) {
               UROS
             </span>
             <span className="text-[11px] uppercase tracking-[0.28em] text-white/45">
-              Frontend Engineer
+              Frontend / Full stack Engineer
             </span>
           </div>
         </Link>

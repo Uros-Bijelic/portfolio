@@ -51,7 +51,7 @@ export function Navigation({ toggleSidbar }: NavigationProps) {
       variants={variants}
       className="absolute left-0 top-24 flex w-75 flex-col gap-4 px-5"
     >
-      {/* {NAV_ITEMS.map(({ href, icon, text, download }) => (
+      {NAV_ITEMS.map(({ href, icon, text, download }) => (
         <MenuItem
           href={href}
           icon={icon}
@@ -60,7 +60,7 @@ export function Navigation({ toggleSidbar }: NavigationProps) {
           download={download}
           toggleSidbar={toggleSidbar}
         />
-      ))} */}
+      ))}
     </motion.ul>
   );
 }

@@ -100,7 +100,7 @@ export default function HeaderMobile({ isAlwaysVisible }: HeaderMobileProps) {
       transition={{
         duration: 0.2,
       }}
-      className="fixed z-5001 sm:hidden"
+      className="fixed z-5001 sm:hidden [@media(min-width:605px)]:hidden"
     >
       <motion.nav
         initial={false}
