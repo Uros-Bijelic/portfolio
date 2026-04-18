@@ -8,7 +8,7 @@ import { cn } from '@/utils/cn';
 
 // ----------------------------------------------------------------
 
-interface IVortexProps {
+type VortexProps = {
   children?: any;
   className?: string;
   containerClassName?: string;
@@ -20,9 +20,9 @@ interface IVortexProps {
   baseRadius?: number;
   rangeRadius?: number;
   backgroundColor?: string;
-}
+};
 
-export const Vortex: React.FC<IVortexProps> = (props) => {
+export function Vortex(props: VortexProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef(null);
   const particleCount = props.particleCount || 700;
@@ -263,4 +263,4 @@ export const Vortex: React.FC<IVortexProps> = (props) => {
       </div>
     </div>
   );
-};
+}

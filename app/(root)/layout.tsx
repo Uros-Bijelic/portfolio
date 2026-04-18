@@ -2,11 +2,11 @@ import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 import HeaderMobile from '@/components/layout/HeaderMobile';
 
-interface ILayoutProps {
+type LayoutProps = {
   children: React.ReactNode;
-}
+};
 
-const Layout: React.FC<ILayoutProps> = ({ children }) => {
+export default function Layout({ children }: LayoutProps) {
   return (
     <div className="mx-auto h-full min-h-screen">
       <Header />
@@ -15,6 +15,4 @@ const Layout: React.FC<ILayoutProps> = ({ children }) => {
       <Footer />
     </div>
   );
-};
-
-export default Layout;
+}

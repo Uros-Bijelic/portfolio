@@ -12,18 +12,18 @@ import { useFormContext } from 'react-hook-form';
 
 // ----------------------------------------------------------------
 
-interface ITextareaProps extends TextareaProps {
+type RHFTextareaProps = TextareaProps & {
   name: string;
   label: string;
   description?: string;
-}
+};
 
-const RHFTextarea: React.FC<ITextareaProps> = ({
+export default function RHFTextarea({
   name,
   label,
   description,
   ...rest
-}) => {
+}: RHFTextareaProps) {
   const { control } = useFormContext();
 
   return (
@@ -42,6 +42,4 @@ const RHFTextarea: React.FC<ITextareaProps> = ({
       )}
     />
   );
-};
-
-export default RHFTextarea;
+}

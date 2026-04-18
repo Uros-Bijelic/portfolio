@@ -1,3 +1,4 @@
+import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
@@ -20,33 +21,39 @@ const variants = {
   },
 };
 
-interface IMenuItemProps {
+type MenuItemProps = {
   href: string;
   icon: React.ReactNode;
   text: string;
   download?: boolean;
   toggleSidbar: () => void;
-}
+};
 
-export const MenuItem: React.FC<IMenuItemProps> = ({
+export function MenuItem({
   href,
   text,
   icon,
   toggleSidbar,
   download = false,
-}) => {
-  console.log('href', href);
+}: MenuItemProps) {
+  const pathname = usePathname();
+  const isActive = !download && pathname === href;
+
   return (
     <motion.li
       variants={variants}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1.03, x: 4 }}
       whileTap={{ scale: 0.95 }}
     >
       <Link
         href={href}
         download={download}
         target={download ? '_blank' : '_self'}
-        className="flex w-full cursor-pointer items-center gap-2.5 text-lg text-white-100"
+        className={`flex w-full items-center gap-3 rounded-2xl border px-4 py-3 text-lg transition ${
+          isActive
+            ? 'border-teal-300/25 bg-teal-300/12 text-white'
+            : 'border-white/8 bg-white/4 text-white/80 hover:border-white/14 hover:bg-white/7 hover:text-white'
+        }`}
         onClick={toggleSidbar}
       >
         {icon}
@@ -54,4 +61,4 @@ export const MenuItem: React.FC<IMenuItemProps> = ({
       </Link>
     </motion.li>
   );
-};
+}

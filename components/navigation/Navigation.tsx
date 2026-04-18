@@ -28,11 +28,6 @@ const NAV_ITEMS: {
     href: '/',
     icon: <LogoIcon className="text-white-100" />,
   },
-  // {
-  //   text: 'Work',
-  //   href: '/projects',
-  //   icon: <ProjectsIcon />,
-  // },
   {
     text: 'Contact',
     href: '/contact',
@@ -46,24 +41,26 @@ const NAV_ITEMS: {
   },
 ];
 
-interface INavigation {
+type NavigationProps = {
   toggleSidbar: () => void;
-}
+};
 
-export const Navigation: React.FC<INavigation> = ({ toggleSidbar }) => (
-  <motion.ul
-    variants={variants}
-    className="absolute top-[100px] flex w-[270px] flex-col gap-5 pl-[30px]"
-  >
-    {NAV_ITEMS.map(({ href, icon, text, download }) => (
-      <MenuItem
-        href={href}
-        icon={icon}
-        text={text}
-        key={href}
-        download={download}
-        toggleSidbar={toggleSidbar}
-      />
-    ))}
-  </motion.ul>
-);
+export function Navigation({ toggleSidbar }: NavigationProps) {
+  return (
+    <motion.ul
+      variants={variants}
+      className="absolute left-0 top-24 flex w-75 flex-col gap-4 px-5"
+    >
+      {NAV_ITEMS.map(({ href, icon, text, download }) => (
+        <MenuItem
+          href={href}
+          icon={icon}
+          text={text}
+          key={href}
+          download={download}
+          toggleSidbar={toggleSidbar}
+        />
+      ))}
+    </motion.ul>
+  );
+}
