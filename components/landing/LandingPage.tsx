@@ -11,7 +11,7 @@ export default function LandingPage() {
   const current = landingOption;
 
   return (
-    <div className="min-h-screen bg-[#050506] text-white">
+    <div className="min-h-screen bg-[#050506] text-white [@media(max-width:605px)]:-mt-7">
       <section className={`relative overflow-hidden ${current.heroTheme}`}>
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-44 md:px-6 md:pb-20 md:pt-52">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
