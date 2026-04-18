@@ -164,11 +164,11 @@ export default function LandingPage() {
                   </span>
                 </div>
 
-                <p className="mt-4 max-w-xl text-sm leading-7 text-white/62 md:text-base">
+                <p className="mt-6 max-w-xl text-sm leading-7 text-white/62 md:text-base">
                   {project.summary}
                 </p>
 
-                <div className="mt-6 overflow-hidden rounded-[24px] border border-white/8 bg-black/20 p-4">
+                <div className="mt-6 overflow-hidden rounded-3xl border border-white/8 bg-black/20 p-4">
                   <Image
                     src={project.image}
                     width={960}
