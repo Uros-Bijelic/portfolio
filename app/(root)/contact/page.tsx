@@ -48,7 +48,7 @@ export default function ContactPage() {
       <div className="bg-[radial-gradient(circle_at_top_left,rgba(45,212,191,0.16),transparent_28%),radial-gradient(circle_at_top_right,rgba(168,85,247,0.10),transparent_24%),linear-gradient(180deg,#0c1113_0%,#050506_100%)]">
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-40 md:px-6 md:pb-20 md:pt-52">
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-            <div className="fade-up rounded-[32px] border border-white/10 bg-[#0b1012]/88 p-7 shadow-[0_24px_80px_rgba(0,0,0,0.34)] backdrop-blur-xl md:p-8">
+            <div className="fade-up rounded-4xl border border-white/10 bg-[#0b1012]/88 p-7 shadow-[0_24px_80px_rgba(0,0,0,0.34)] backdrop-blur-xl md:p-8">
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white/42">
                 Contact
               </p>
@@ -62,9 +62,9 @@ export default function ContactPage() {
               </p>
 
               <div className="mt-8 grid gap-4">
-                <div className="rounded-[24px] border border-white/8 bg-black/20 p-5">
+                <div className="rounded-3xl border border-white/8 bg-black/20 p-5">
                   <div className="flex items-start gap-4">
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-3 text-teal-200">
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-3 text-cyan-300">
                       <IconMail size={22} stroke={1.8} />
                     </div>
                     <div>
@@ -73,7 +73,7 @@ export default function ContactPage() {
                       </p>
                       <a
                         href="mailto:urosbijelic90@gmail.com"
-                        className="mt-2 block text-base text-white transition hover:text-teal-200"
+                        className="mt-2 block text-base text-white transition hover:text-cyan-300"
                       >
                         urosbijelic90@gmail.com
                       </a>
@@ -81,9 +81,9 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="rounded-[24px] border border-white/8 bg-black/20 p-5">
+                <div className="rounded-3xl border border-white/8 bg-black/20 p-5">
                   <div className="flex items-start gap-4">
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-3 text-teal-200">
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-3 text-cyan-300">
                       <IconPhone size={22} stroke={1.8} />
                     </div>
                     <div>
@@ -97,9 +97,9 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="rounded-[24px] border border-white/8 bg-black/20 p-5">
+                <div className="rounded-3xl border border-white/8 bg-black/20 p-5">
                   <div className="flex items-start gap-4">
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-3 text-teal-200">
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-3 text-cyan-300">
                       <IconMapPin size={22} stroke={1.8} />
                     </div>
                     <div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="rounded-[24px] border border-white/8 bg-black/20 p-5">
+                <div className="rounded-3xl border border-white/8 bg-black/20 p-5">
                   <p className="text-xs uppercase tracking-[0.28em] text-white/42">
                     Socials
                   </p>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                     <Link
                       href="https://www.linkedin.com/in/uros-bijelic/"
                       target="_blank"
-                      className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 transition hover:border-white/20 hover:text-white"
+                      className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm chip"
                     >
                       <IconBrandLinkedin size={18} stroke={1.8} />
                       LinkedIn
@@ -129,7 +129,7 @@ export default function ContactPage() {
                     <Link
                       href="https://github.com/urke90"
                       target="_blank"
-                      className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 transition hover:border-white/20 hover:text-white"
+                      className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm chip"
                     >
                       <IconBrandGithub size={18} stroke={1.8} />
                       GitHub
@@ -139,7 +139,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="fade-up-delay-1 rounded-[32px] border border-white/10 bg-[#0b1012]/88 p-7 shadow-[0_24px_80px_rgba(0,0,0,0.34)] backdrop-blur-xl md:p-8">
+            <div className="fade-up-delay-1 rounded-4xl border border-white/10 bg-[#0b1012]/88 p-7 shadow-[0_24px_80px_rgba(0,0,0,0.34)] backdrop-blur-xl md:p-8">
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white/42">
                 Project Inquiry
               </p>

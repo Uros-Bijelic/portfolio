@@ -49,7 +49,7 @@ export function MenuItem({
         href={href}
         download={download}
         target={download ? '_blank' : '_self'}
-        className={`flex w-full items-center gap-3 rounded-2xl border px-4 py-3 text-lg transition ${
+        className={`flex w-full items-center gap-3 rounded-2xl border px-4 py-3 text-lg transition chip ${
           isActive
             ? 'border-teal-300/25 bg-teal-300/12 text-white'
             : 'border-white/8 bg-white/4 text-white/80 hover:border-white/14 hover:bg-white/7 hover:text-white'

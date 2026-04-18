@@ -77,7 +77,7 @@ export default function Header({ isAlwaysVisible = false }: HeaderProps) {
               UROS
             </span>
             <span className="text-[11px] uppercase tracking-[0.28em] text-white/45">
-              Frontend / Full stack Engineer
+              Frontend / Fullstack Engineer
             </span>
           </div>
         </Link>
@@ -105,7 +105,7 @@ export default function Header({ isAlwaysVisible = false }: HeaderProps) {
         <div className="flex items-center">
           <Link
             href="/assets/resume.pdf"
-            className="inline-flex items-center gap-2 rounded-full border border-teal-300/30 bg-teal-300/12 px-4 py-2.5 text-sm font-medium text-teal-100 transition hover:border-teal-200/45 hover:bg-teal-300/18 hover:text-white"
+            className="inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-medium text-teal-100 transition hover:text-white chip"
             download
             target="_blank"
           >

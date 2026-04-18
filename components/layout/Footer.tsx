@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="px-4 pb-8 pt-2 md:px-6 md:pb-10">
-      <div className="mx-auto max-w-7xl rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(10,14,17,0.88)_0%,rgba(7,8,10,0.94)_100%)] px-5 py-6 shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl md:px-8 md:py-7">
+      <div className="mx-auto max-w-7xl rounded-4xl border border-white/10 bg-[linear-gradient(180deg,rgba(10,14,17,0.88)_0%,rgba(7,8,10,0.94)_100%)] px-5 py-6 shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl md:px-8 md:py-7">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/42">

@@ -33,7 +33,7 @@ export default function LandingPage() {
                 {current.featuredStack.map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-white/10 bg-white/6 px-4 py-2 text-sm text-white/78"
+                    className="rounded-full transition px-4 py-2 text-sm chip"
                   >
                     {item}
                   </span>
@@ -50,7 +50,7 @@ export default function LandingPage() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm text-white/82 transition hover:border-white/20 hover:bg-white/5"
+                  className="inline-flex items-center gap-2 rounded-full border px-5 py-3 text-sm text-white/82 transition chip"
                 >
                   {current.secondaryCta}
                 </Link>
@@ -164,7 +164,7 @@ export default function LandingPage() {
                   </span>
                 </div>
 
-                <p className="mt-6 max-w-xl text-sm leading-7 text-white/62 md:text-base">
+                <p className="mt-7 max-w-xl text-sm leading-7 text-white/62 md:text-base">
                   {project.summary}
                 </p>
 
@@ -184,7 +184,7 @@ export default function LandingPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 pb-16 md:px-6 md:pb-20">
-        <div className={`rounded-[32px] border p-8 ${current.panelTheme}`}>
+        <div className={`rounded-4xl border p-8 ${current.panelTheme}`}>
           <div className="flex flex-col gap-8">
             <div className="max-w-3xl">
               <p className="text-xs uppercase tracking-[0.3em] text-white/42">
@@ -204,7 +204,7 @@ export default function LandingPage() {
               {current.fullStack.map((item) => (
                 <span
                   key={item}
-                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/78"
+                  className="rounded-full px-4 py-2 text-sm chip"
                 >
                   {item}
                 </span>
