@@ -11,19 +11,19 @@ import {
 
 // ----------------------------------------------------------------
 
-interface IEmailSender {
+type EmailSenderProps = {
   name?: string;
   email?: string;
   description?: string;
   contact?: string;
-}
+};
 
-const EmailTemplate = ({
+export default function EmailTemplate({
   name,
   email,
   description,
   contact,
-}: IEmailSender) => {
+}: EmailSenderProps) {
   const previewText = `Read ${name}'s review`;
 
   return (
@@ -49,9 +49,7 @@ const EmailTemplate = ({
       </Body>
     </Html>
   );
-};
-
-export default EmailTemplate;
+}
 
 const main = {
   backgroundColor: '#ffffff',

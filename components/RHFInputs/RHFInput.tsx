@@ -12,18 +12,18 @@ import { useFormContext } from 'react-hook-form';
 
 // ----------------------------------------------------------------
 
-interface IRHFInputProps extends InputProps {
+type RHFInputProps = InputProps & {
   name: string;
   label: string;
   description?: string;
-}
+};
 
-const RHFInput: React.FC<IRHFInputProps> = ({
+export default function RHFInput({
   name,
   label,
   description,
   ...rest
-}) => {
+}: RHFInputProps) {
   const { control } = useFormContext();
 
   return (
@@ -42,6 +42,4 @@ const RHFInput: React.FC<IRHFInputProps> = ({
       )}
     />
   );
-};
-
-export default RHFInput;
+}

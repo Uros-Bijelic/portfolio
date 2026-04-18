@@ -2,7 +2,6 @@
 
 import { MenuToggle } from '../navigation/MenuToggle';
 import { Navigation } from '../navigation/Navigation';
-import type { Variants } from "framer-motion";
 import {
   motion,
   useCycle,
@@ -18,6 +17,7 @@ import { useDimensions } from '@/hooks/use-dimensions';
 const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    opacity: 1,
     transition: {
       type: 'spring' as const,
       stiffness: 20,
@@ -26,8 +26,10 @@ const sidebar = {
   }),
   closed: {
     clipPath: 'circle(30px at 40px 40px)',
+    opacity: 0,
     transition: {
-      delay: 0.5,
+      opacity: { duration: 0.15 },
+      delay: 0.2,
       type: 'spring' as const,
       stiffness: 400,
       damping: 40,
@@ -35,11 +37,11 @@ const sidebar = {
   },
 };
 
-interface IHeaderMobileProps {
+type HeaderMobileProps = {
   isAlwaysVisible?: boolean;
-}
+};
 
-const HeaderMobile: React.FC<IHeaderMobileProps> = ({ isAlwaysVisible }) => {
+export default function HeaderMobile({ isAlwaysVisible }: HeaderMobileProps) {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const { height } = useDimensions(containerRef);
@@ -98,24 +100,23 @@ const HeaderMobile: React.FC<IHeaderMobileProps> = ({ isAlwaysVisible }) => {
       transition={{
         duration: 0.2,
       }}
-      className="fixed z-5001"
+      className="fixed z-5001 sm:hidden"
     >
       <motion.nav
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
         custom={height}
         ref={containerRef}
-        className="fixed inset-y-0 left-0 z-5000 sm:hidden"
+        className="fixed left-0 top-0 z-5000 sm:hidden"
       >
         <motion.div
-          className="fixed inset-y-0 left-0 size-full h-screen w-75 border-r border-r-black-400 bg-black-600"
+          className="fixed inset-y-0 left-0 size-full h-screen w-75 border-r border-r-white/10 bg-[linear-gradient(180deg,rgba(10,14,17,0.98)_0%,rgba(8,8,10,0.98)_100%)] shadow-[0_20px_70px_rgba(0,0,0,0.45)]"
           variants={sidebar}
+          style={{ pointerEvents: isOpen ? 'auto' : 'none' }}
         />
         <Navigation toggleSidbar={() => toggleOpen(0)} />
         <MenuToggle toggle={() => toggleOpen()} />
       </motion.nav>
     </motion.div>
   );
-};
-
-export default HeaderMobile;
+}

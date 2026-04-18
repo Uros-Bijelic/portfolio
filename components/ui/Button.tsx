@@ -4,11 +4,11 @@ import Link from 'next/link';
 
 // ----------------------------------------------------------------
 
-interface IButtonProps {
+type ButtonProps = {
   children: React.ReactNode;
-}
+};
 
-export const ButtonBorderGradient: React.FC<IButtonProps> = ({ children }) => {
+export function ButtonBorderGradient({ children }: ButtonProps) {
   return (
     <button className="relative p-0.75">
       <div className="absolute inset-0 rounded-lg bg-linear-to-r from-indigo-500 to-purple-500" />
@@ -17,9 +17,9 @@ export const ButtonBorderGradient: React.FC<IButtonProps> = ({ children }) => {
       </div>
     </button>
   );
-};
+}
 
-export const ButtonMagicBorder: React.FC<IButtonProps> = ({}) => {
+export function ButtonMagicBorder() {
   return (
     <Link
       href="/"
@@ -31,4 +31,4 @@ export const ButtonMagicBorder: React.FC<IButtonProps> = ({}) => {
       </span>
     </Link>
   );
-};
+}
