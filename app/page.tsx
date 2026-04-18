@@ -6,8 +6,8 @@ import HeaderMobile from '@/components/layout/HeaderMobile';
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#050506]">
-      <Header isAlwaysVisible />
-      <HeaderMobile isAlwaysVisible />
+      <Header />
+      <HeaderMobile />
       <LandingPage />
       <Footer />
     </div>

@@ -12,7 +12,7 @@ const figtree = Figtree({ subsets: ['latin'], variable: '--font-figtree' });
 export const metadata: Metadata = {
   title: 'Uros Bijelic',
   description:
-    'Full Stack Developer from Serbia. I use Next.js React.js and Node.js in combination with Node.js to create super modern reliable web apps.',
+    'Frontend / Full Stack Developer from Serbia. I use Next.js React.js and Node.js in combination with Node.js to create super modern reliable web apps.',
 };
 
 const RootLayout = ({

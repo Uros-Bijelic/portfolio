@@ -26,7 +26,7 @@ export const landingOption: LandingOption = {
     'bg-[radial-gradient(circle_at_top_left,rgba(45,212,191,0.18),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.08),transparent_26%),linear-gradient(180deg,#0c1113_0%,#060608_100%)]',
   panelTheme: 'bg-[#0b1012]/88 border-white/10',
   accentTheme: 'from-teal-300 via-cyan-300 to-violet-300',
-  metricTheme: 'text-teal-200',
+  metricTheme: 'text-cyan-300',
   accentLabel: 'Product-minded / Frontend-first / Full stack capable',
   featuredStack: [
     'React',

@@ -26,7 +26,7 @@ const NAV_ITEMS: {
   {
     text: 'Home',
     href: '/',
-    icon: <LogoIcon className="text-white-100" />,
+    icon: <LogoIcon className="invert" />,
   },
   {
     text: 'Contact',
