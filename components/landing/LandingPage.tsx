@@ -11,15 +11,15 @@ export default function LandingPage() {
   const current = landingOption;
 
   return (
-    <div className="min-h-screen bg-[#050506] text-white [@media(max-width:605px)]:-mt-7">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.08),transparent_36%),#050506] text-white">
       <section className={`relative overflow-hidden ${current.heroTheme}`}>
-        <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-44 md:px-6 md:pb-20 md:pt-52">
+        <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-24 sm:pt-28 md:px-6 md:pb-20 md:pt-36">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
             <div className="max-w-3xl">
               <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-white/55">
                 {current.eyebrow}
               </p>
-              <h1 className="text-4xl font-semibold tracking-[-0.06em] text-white md:text-6xl md:leading-[1.05]">
+              <h1 className="text-[2rem] font-semibold leading-tight tracking-[-0.06em] text-white md:text-6xl md:leading-[1.05]">
                 {current.title}
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-7 text-white/68 md:text-lg">
@@ -88,7 +88,7 @@ export default function LandingPage() {
                   <p className="text-xs uppercase tracking-[0.28em] text-white/40">
                     Based in
                   </p>
-                  <p className="mt-3 text-3xl font-semibold tracking-[-0.05em]">
+                  <p className="mt-3 text-xl font-semibold leading-tight tracking-[-0.05em] sm:text-2xl md:text-3xl">
                     Belgrade, Serbia with strong English communication and a frontend-first mindset.
                   </p>
                 </div>
@@ -118,7 +118,7 @@ export default function LandingPage() {
             <p className="text-xs uppercase tracking-[0.3em] text-white/42">
               Featured Projects
             </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.05em] md:text-5xl">
+            <h2 className="mt-3 text-2xl font-semibold tracking-[-0.05em] sm:text-3xl md:text-5xl">
               Two flagship builds, each with its own detail page.
             </h2>
           </div>
@@ -141,8 +141,8 @@ export default function LandingPage() {
               <div
                 className={`absolute inset-x-0 top-0 h-28 bg-linear-to-r ${
                   index === 0
-                    ? 'from-teal-400/18 via-cyan-300/10 to-transparent'
-                    : 'from-fuchsia-400/18 via-violet-300/10 to-transparent'
+                    ? 'from-cyan-400/18 via-cyan-300/12 to-transparent'
+                    : 'from-sky-400/18 via-cyan-300/12 to-transparent'
                 }`}
               />
               <div className="relative">
@@ -151,7 +151,7 @@ export default function LandingPage() {
                     <p className="text-xs uppercase tracking-[0.28em] text-white/42">
                       {project.tag}
                     </p>
-                    <h3 className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-white">
+                    <h3 className="mt-3 text-2xl font-semibold tracking-[-0.05em] text-white md:text-3xl">
                       {project.title}
                     </h3>
                   </div>
@@ -187,7 +187,7 @@ export default function LandingPage() {
               <p className="text-xs uppercase tracking-[0.3em] text-white/42">
                 Tech Stack
               </p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-[-0.05em] md:text-4xl">
+              <h2 className="mt-3 text-2xl font-semibold tracking-[-0.05em] sm:text-3xl md:text-4xl">
                 Technologies I use across frontend, UI systems, and full stack product work.
               </h2>
               <p className="mt-3 max-w-2xl text-sm leading-7 text-white/62 md:text-base">

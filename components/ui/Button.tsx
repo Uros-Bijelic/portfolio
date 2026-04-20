@@ -11,7 +11,7 @@ type ButtonProps = {
 export function ButtonBorderGradient({ children }: ButtonProps) {
   return (
     <button className="relative p-0.75">
-      <div className="absolute inset-0 rounded-lg bg-linear-to-r from-indigo-500 to-purple-500" />
+      <div className="absolute inset-0 rounded-lg bg-linear-to-r from-cyan-300 to-sky-300" />
       <div className="bg-black text-white group relative rounded-md px-8 py-2 transition hover:bg-transparent">
         {children}
       </div>

@@ -20,7 +20,7 @@ export function MenuToggle({ toggle }: MenuToggleProps) {
   return (
     <button
       onClick={toggle}
-      className="absolute left-7 top-4.5 z-10 flex size-12.5 cursor-pointer select-none items-center justify-center rounded-full border border-white/10 bg-[rgba(18,25,28,0.92)] shadow-[0_12px_30px_rgba(0,0,0,0.35)] outline-none transition hover:border-teal-300/25 hover:bg-[rgba(24,34,37,0.96)]"
+      className="absolute left-7 top-4.5 z-10 flex size-12.5 cursor-pointer select-none items-center justify-center rounded-full border border-white/10 bg-[rgba(18,25,28,0.92)] shadow-[0_12px_30px_rgba(0,0,0,0.35)] outline-none transition hover:border-cyan-300/35 hover:bg-[rgba(24,34,37,0.96)]"
     >
       <svg width="23" height="23" viewBox="0 0 20 20">
         <Path

@@ -49,13 +49,13 @@ export default function Header({ isAlwaysVisible = false }: HeaderProps) {
         y: -100,
       }}
       animate={{
-        y: visible ? 40 : -100,
+        y: visible ? 24 : -100,
         opacity: visible ? 1 : 0,
       }}
       transition={{
         duration: 0.2,
       }}
-      className="fixed z-5001 hidden w-full px-4 min-[605px]:block md:px-5"
+      className="fixed z-5001 hidden w-full px-4 sm:block md:px-5"
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-6 rounded-full border border-white/10 bg-[rgba(7,10,12,0.72)] px-4 py-3 shadow-[0_18px_60px_rgba(0,0,0,0.38)] backdrop-blur-xl">
         <Link
@@ -92,7 +92,7 @@ export default function Header({ isAlwaysVisible = false }: HeaderProps) {
                 href={item.href}
                 className={`rounded-full px-4 py-2.5 text-sm font-medium transition ${
                   isActive
-                    ? 'bg-white text-black shadow-[0_8px_24px_rgba(255,255,255,0.08)]'
+                    ? 'bg-cyan-300 text-black shadow-[0_8px_24px_rgba(34,211,238,0.2)]'
                     : 'text-white/68 hover:bg-white/6 hover:text-white'
                 }`}
               >
@@ -105,7 +105,7 @@ export default function Header({ isAlwaysVisible = false }: HeaderProps) {
         <div className="flex items-center">
           <Link
             href="/assets/resume.pdf"
-            className="inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-medium text-teal-100 transition hover:text-white chip"
+            className="inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-medium text-cyan-100 transition hover:text-white chip"
             download
             target="_blank"
           >

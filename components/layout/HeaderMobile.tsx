@@ -100,7 +100,7 @@ export default function HeaderMobile({ isAlwaysVisible }: HeaderMobileProps) {
       transition={{
         duration: 0.2,
       }}
-      className="fixed z-5001 sm:hidden [@media(min-width:605px)]:hidden"
+      className="fixed z-5001 sm:hidden"
     >
       <motion.nav
         initial={false}
@@ -110,7 +110,7 @@ export default function HeaderMobile({ isAlwaysVisible }: HeaderMobileProps) {
         className="fixed left-0 top-0 z-5000 sm:hidden"
       >
         <motion.div
-          className="fixed inset-y-0 left-0 size-full h-screen w-75 border-r border-r-white/10 bg-[linear-gradient(180deg,rgba(10,14,17,0.98)_0%,rgba(8,8,10,0.98)_100%)] shadow-[0_20px_70px_rgba(0,0,0,0.45)]"
+          className="fixed inset-y-0 left-0 size-full h-screen w-75 border-r border-r-white/10 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.14),transparent_34%),linear-gradient(180deg,rgba(10,14,17,0.98)_0%,rgba(8,8,10,0.98)_100%)] shadow-[0_20px_70px_rgba(0,0,0,0.45)]"
           variants={sidebar}
           style={{ pointerEvents: isOpen ? 'auto' : 'none' }}
         />

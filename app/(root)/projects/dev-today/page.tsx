@@ -51,14 +51,14 @@ function SectionCard({
 export default function DevTodayPage() {
   return (
     <section className="min-h-screen bg-[#050506] text-white">
-      <div className="bg-[radial-gradient(circle_at_top_left,rgba(45,212,191,0.14),transparent_28%),radial-gradient(circle_at_top_right,rgba(168,85,247,0.12),transparent_24%),linear-gradient(180deg,#0d0e14_0%,#050506_100%)]">
-        <div className="mx-auto max-w-7xl px-4 pb-16 pt-40 md:px-6 md:pb-20 md:pt-52">
+      <div className="bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.14),transparent_28%),radial-gradient(circle_at_top_right,rgba(56,189,248,0.14),transparent_24%),linear-gradient(180deg,#0d0e14_0%,#050506_100%)]">
+        <div className="mx-auto max-w-7xl px-4 pb-16 pt-24 sm:pt-28 md:px-6 md:pb-20 md:pt-36">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
             <div className="max-w-3xl">
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white/42">
                 Case Study / Community Platform
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-[-0.06em] text-white md:text-6xl md:leading-[1.04]">
+              <h1 className="mt-4 text-[2rem] font-semibold leading-tight tracking-[-0.06em] text-white sm:text-4xl md:text-6xl md:leading-[1.04]">
                 Dev Today
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-7 text-white/66 md:text-lg">
@@ -71,7 +71,7 @@ export default function DevTodayPage() {
                 {techStack.map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/78"
+                    className="rounded-full px-4 py-2 text-sm chip"
                   >
                     {item}
                   </span>
@@ -82,7 +82,7 @@ export default function DevTodayPage() {
                 <Link
                   href="https://dev-today.urosbijelic.com"
                   target="_blank"
-                  className="inline-flex items-center gap-2 rounded-full bg-linear-to-r from-teal-300 via-cyan-300 to-violet-300 px-5 py-3 text-sm font-semibold text-black transition hover:brightness-110"
+                  className="inline-flex items-center gap-2 rounded-full bg-linear-to-r from-cyan-200 via-cyan-300 to-sky-300 px-5 py-3 text-sm font-semibold text-black transition hover:brightness-110"
                 >
                   Live product
                   <IconArrowUpRight size={18} stroke={1.8} />
@@ -111,7 +111,7 @@ export default function DevTodayPage() {
                 <p className="text-xs uppercase tracking-[0.28em] text-white/42">
                   Scope
                 </p>
-                <p className="mt-3 text-2xl font-semibold tracking-[-0.05em]">
+                <p className="mt-3 text-xl font-semibold leading-tight tracking-[-0.05em] sm:text-2xl">
                   Full stack community product spanning content creation,
                   discovery, and user collaboration.
                 </p>
