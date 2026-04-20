@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="flex flex-col gap-2 text-sm text-white/70 md:items-end">
             <a
               href="mailto:urosbijelic90@gmail.com"
-              className="transition hover:text-teal-200"
+              className="transition hover:text-cyan-200"
             >
               urosbijelic90@gmail.com
             </a>

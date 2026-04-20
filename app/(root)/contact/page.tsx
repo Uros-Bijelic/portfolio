@@ -45,25 +45,25 @@ export default function ContactPage() {
 
   return (
     <section className="min-h-screen bg-[#050506] text-white">
-      <div className="bg-[radial-gradient(circle_at_top_left,rgba(45,212,191,0.16),transparent_28%),radial-gradient(circle_at_top_right,rgba(168,85,247,0.10),transparent_24%),linear-gradient(180deg,#0c1113_0%,#050506_100%)]">
-        <div className="mx-auto max-w-7xl px-4 pb-16 pt-40 md:px-6 md:pb-20 md:pt-52">
-          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-            <div className="fade-up rounded-4xl border border-white/10 bg-[#0b1012]/88 p-7 shadow-[0_24px_80px_rgba(0,0,0,0.34)] backdrop-blur-xl md:p-8">
+      <div className="bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.16),transparent_28%),radial-gradient(circle_at_top_right,rgba(56,189,248,0.12),transparent_26%),linear-gradient(180deg,#0c1113_0%,#050506_100%)]">
+        <div className="mx-auto max-w-7xl px-4 pb-14 pt-22 sm:pt-30 md:px-6 md:pb-20 md:pt-36">
+          <div className="grid gap-5 sm:gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
+            <div className="fade-up rounded-4xl border border-white/10 bg-[#0b1012]/88 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.34)] backdrop-blur-xl sm:p-6 md:p-8">
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white/42">
                 Contact
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-[-0.06em] text-white md:text-5xl">
+              <h1 className="mt-3 text-[1.75rem] font-semibold leading-tight tracking-[-0.04em] text-white sm:mt-4 sm:text-4xl md:text-5xl">
                 Let&apos;s build something thoughtful and production-ready.
               </h1>
-              <p className="mt-5 max-w-xl text-sm leading-7 text-white/64 md:text-base">
+              <p className="mt-4 max-w-xl text-sm leading-6 text-white/64 sm:mt-5 sm:leading-7 md:text-base">
                 I&apos;m open to full stack engineering roles and strong
                 frontend opportunities. If you have a product, team, or idea in
                 motion, I&apos;d be happy to hear more about it.
               </p>
 
-              <div className="mt-8 grid gap-4">
-                <div className="rounded-3xl border border-white/8 bg-black/20 p-5">
-                  <div className="flex items-start gap-4">
+              <div className="mt-6 grid gap-3 sm:mt-8 sm:gap-4">
+                <div className="rounded-3xl border border-white/8 bg-black/20 p-4 sm:p-5">
+                  <div className="flex items-start gap-3 sm:gap-4">
                     <div className="rounded-2xl border border-white/10 bg-white/5 p-3 text-cyan-300">
                       <IconMail size={22} stroke={1.8} />
                     </div>
@@ -73,7 +73,7 @@ export default function ContactPage() {
                       </p>
                       <a
                         href="mailto:urosbijelic90@gmail.com"
-                        className="mt-2 block text-base text-white transition hover:text-cyan-300"
+                        className="mt-2 block break-all text-sm text-white transition hover:text-cyan-300 sm:text-base"
                       >
                         urosbijelic90@gmail.com
                       </a>
@@ -81,8 +81,8 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="rounded-3xl border border-white/8 bg-black/20 p-5">
-                  <div className="flex items-start gap-4">
+                <div className="rounded-3xl border border-white/8 bg-black/20 p-4 sm:p-5">
+                  <div className="flex items-start gap-3 sm:gap-4">
                     <div className="rounded-2xl border border-white/10 bg-white/5 p-3 text-cyan-300">
                       <IconPhone size={22} stroke={1.8} />
                     </div>
@@ -97,8 +97,8 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="rounded-3xl border border-white/8 bg-black/20 p-5">
-                  <div className="flex items-start gap-4">
+                <div className="rounded-3xl border border-white/8 bg-black/20 p-4 sm:p-5">
+                  <div className="flex items-start gap-3 sm:gap-4">
                     <div className="rounded-2xl border border-white/10 bg-white/5 p-3 text-cyan-300">
                       <IconMapPin size={22} stroke={1.8} />
                     </div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="rounded-3xl border border-white/8 bg-black/20 p-5">
+                <div className="rounded-3xl border border-white/8 bg-black/20 p-4 sm:p-5">
                   <p className="text-xs uppercase tracking-[0.28em] text-white/42">
                     Socials
                   </p>
@@ -139,21 +139,21 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="fade-up-delay-1 rounded-4xl border border-white/10 bg-[#0b1012]/88 p-7 shadow-[0_24px_80px_rgba(0,0,0,0.34)] backdrop-blur-xl md:p-8">
+            <div className="fade-up-delay-1 rounded-4xl border border-white/10 bg-[#0b1012]/88 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.34)] backdrop-blur-xl sm:p-6 md:p-8">
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white/42">
                 Project Inquiry
               </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-[-0.05em] text-white md:text-4xl">
+              <h2 className="mt-3 text-xl font-semibold tracking-[-0.04em] text-white sm:mt-4 sm:text-3xl md:text-4xl">
                 Tell me what you&apos;re building.
               </h2>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-white/62 md:text-base">
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-white/62 sm:mt-4 sm:leading-7 md:text-base">
                 Share the goals, timeline, and what kind of support you need. A
                 short message is enough to get the conversation started.
               </p>
 
               <Form {...form}>
                 <form
-                  className="mt-8 flex flex-col gap-4"
+                  className="mt-5 flex flex-col gap-3 sm:mt-8 sm:gap-4"
                   onSubmit={form.handleSubmit(onSubmit)}
                 >
                   <RHFInput name="name" label="Your name" />
@@ -168,7 +168,7 @@ export default function ContactPage() {
                   />
 
                   <button
-                    className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-linear-to-r from-teal-300 via-cyan-300 to-violet-300 px-5 py-3 text-sm font-semibold text-black transition hover:brightness-110"
+                    className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full bg-linear-to-r from-cyan-200 via-cyan-300 to-sky-300 px-5 py-3 text-sm font-semibold text-black transition hover:brightness-110 sm:w-auto"
                     type="submit"
                   >
                     Send message
